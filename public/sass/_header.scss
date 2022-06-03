@@ -1,0 +1,103 @@
+header { 
+    @include fixed-header();
+    @include fontSize();
+    
+    nav {
+        display: flex;
+        justify-content: space-around;
+
+        &:first-child {
+            background: $color-1;
+            color: #fff;
+            letter-spacing: .01rem;
+            padding-bottom: 1rem;
+            
+            div {
+                align-items: center;
+                display: flex;
+
+                &:first-child {
+                    p {
+                        padding-inline: 1rem;
+
+                        svg  {
+                            @include icons();
+                        }
+                    }
+                }
+
+                &:last-child { 
+                    svg {
+                        @include icons();
+                    } 
+                }
+            }
+
+
+        }
+
+        &:last-child {
+            background-color: $color-2;  
+            padding-block: 1rem;
+
+            ul {
+                display: flex;
+
+                li {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    letter-spacing: .1rem;
+                    margin-inline: 1.5rem;
+
+                    a {
+                        color: darken($color: $color-2, $amount: 50%);
+
+                        &:hover {
+                            color: $color-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-sm-screen {
+    @include fixed-header();
+    align-items: center;
+    background: #fff;
+    box-shadow: 1px 2px 19px #222;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    div {
+        h1 {
+            font-size: unset;
+        }
+
+        svg {
+            @include icons();
+            height: 2rem;
+            padding: unset;
+            width: 2rem;
+        }
+
+        &:last-child {
+            transform: translateX(-1.5rem);
+        }
+    }
+}
+
+@media(max-width: 1016px) {
+    header {
+        display: none;
+    } 
+}
+
+@media(min-width: 1016px) {
+    .header-sm-screen {
+        display: none;
+    }
+ 
+}

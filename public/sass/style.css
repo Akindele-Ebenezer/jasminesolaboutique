@@ -1,0 +1,244 @@
+* {
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+h1,
+h2 span {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2,
+h2 span {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h3,
+h2 span {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h4,
+h2 span {
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+  font-size: small;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+header nav:first-child {
+  background: #13356c;
+  color: #fff;
+  letter-spacing: 0.01rem;
+  padding-bottom: 1rem;
+}
+header nav:first-child div {
+  align-items: center;
+  display: flex;
+}
+header nav:first-child div:first-child p {
+  padding-inline: 1rem;
+}
+header nav:first-child div:first-child p svg {
+  background: #fff;
+  border-radius: 50%;
+  fill: #13356c;
+  height: 1rem;
+  margin-inline: 0.2rem;
+  padding: 0.3rem;
+  width: 1rem;
+  transform: translateY(0.5rem);
+}
+header nav:first-child div:last-child svg {
+  background: #fff;
+  border-radius: 50%;
+  fill: #13356c;
+  height: 1rem;
+  margin-inline: 0.2rem;
+  padding: 0.3rem;
+  width: 1rem;
+  transform: translateY(0.5rem);
+}
+header nav:last-child {
+  background-color: #eee;
+  padding-block: 1rem;
+}
+header nav:last-child ul {
+  display: flex;
+}
+header nav:last-child ul li {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin-inline: 1.5rem;
+}
+header nav:last-child ul li a {
+  color: #6f6f6f;
+}
+header nav:last-child ul li a:hover {
+  color: #13356c;
+}
+
+.header-sm-screen {
+  position: fixed;
+  width: 100vw;
+  align-items: center;
+  background: #fff;
+  box-shadow: 1px 2px 19px #222;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.header-sm-screen div h1 {
+  font-size: unset;
+}
+.header-sm-screen div svg {
+  background: #fff;
+  border-radius: 50%;
+  fill: #13356c;
+  height: 1rem;
+  margin-inline: 0.2rem;
+  padding: 0.3rem;
+  width: 1rem;
+  transform: translateY(0.5rem);
+  height: 2rem;
+  padding: unset;
+  width: 2rem;
+}
+.header-sm-screen div:last-child {
+  transform: translateX(-1.5rem);
+}
+
+@media (max-width: 1016px) {
+  header {
+    display: none;
+  }
+}
+@media (min-width: 1016px) {
+  .header-sm-screen {
+    display: none;
+  }
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+main .main {
+  width: 80vw;
+}
+
+section.sec-1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+section.sec-1 .sec-1-inner {
+  align-items: center;
+  background: rgba(0, 18, 87, 0.55);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+section.sec-1 .sec-1-inner div {
+  color: #fff;
+  padding-inline: 1rem;
+  text-align: center;
+  width: 30rem;
+}
+section.sec-1 .sec-1-inner div button {
+  color: #fff;
+  margin-right: 1rem;
+  padding: 0.5rem 2rem;
+  margin-block: 1rem;
+}
+section.sec-1 .sec-1-inner div button:first-of-type {
+  background: #13356c;
+  border: 3px solid #13356c;
+  border-radius: 0.3rem;
+}
+section.sec-1 .sec-1-inner div button:last-of-type {
+  background: none;
+  border: 3px solid #fff;
+}
+section.sec-1 .sec-1-inner div h1 {
+  color: #ddd;
+  text-align: right;
+  text-decoration: underline;
+}
+section.sec-1 .sec-1-inner div h2 {
+  font-size: 6rem;
+  margin-block: 1rem;
+  text-align: center;
+}
+section.sec-1 .sec-1-inner div h3 {
+  font-style: italic;
+}
+section.sec-1 .sec-1-inner div span {
+  color: #ddd;
+  font-size: 4rem;
+}
+section.sec-2 {
+  background: #f5f7f9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-block: 4rem;
+}
+section.sec-2 .sec-2-inner {
+  margin: 2rem;
+  text-align: center;
+}
+section.sec-2 .sec-2-inner p {
+  margin-block: 0.5rem;
+}
+section.sec-2 .sec-2-inner div img {
+  width: 5rem;
+}
+
+@media (max-width: 1350px) {
+  main .main {
+    width: 100vw;
+  }
+}
+@media (min-width: 760px) {
+  section.sec-1 .sec-1-inner div {
+    width: 80rem;
+  }
+  section.sec-1 .sec-1-inner div h2 {
+    color: #eee;
+    font-size: 10rem;
+  }
+  section.sec-1 .sec-1-inner div h2 span {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 470px) {
+  section.sec-1 .sec-1-inner div h1 {
+    font-size: 1rem;
+  }
+  section.sec-1 .sec-1-inner div h2 {
+    font-size: 4rem;
+  }
+  section.sec-1 .sec-1-inner div h3,
+section.sec-1 .sec-1-inner div p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 308px) {
+  section.sec-1 .sec-1-inner div h2 {
+    font-size: 3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

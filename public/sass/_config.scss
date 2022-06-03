@@ -1,0 +1,41 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+$color-1: #13356c;
+$color-2: #eee;
+$color-3: #f5f7f9; 
+
+@mixin fontSize {
+    font-size: small;
+}
+
+@mixin icons {
+    background: #fff;
+    border-radius: 50%;
+    fill: $color-1;
+    height: 1rem;
+    margin-inline: .2rem;
+    padding: .3rem;
+    width: 1rem;
+    transform: translateY(.5rem);
+}
+
+@mixin fixed-header {
+    position: fixed;
+    width: 100vw;
+}
+
+$headings: 1, 2, 3, 4;
+
+@each $heading in $headings {
+    h#{$heading},
+    h2 span {
+        font-family: 'Ubuntu', sans-serif;
+    }
+}
