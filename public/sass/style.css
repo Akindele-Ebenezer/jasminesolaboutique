@@ -217,10 +217,9 @@ section.sec-2 .sec-2-inner div img {
   }
   section.sec-1 .sec-1-inner div h2 {
     color: #eee;
-    font-size: 10rem;
   }
   section.sec-1 .sec-1-inner div h2 span {
-    font-size: 10rem;
+    font-size: 6rem;
   }
 }
 @media (max-width: 470px) {
