@@ -1,5 +1,6 @@
 * {
   font-family: "Poppins", sans-serif;
+  font-size: small;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -9,21 +10,25 @@
 
 h1,
 h2 span {
+  color: #13356c;
   font-family: "Ubuntu", sans-serif;
 }
 
 h2,
 h2 span {
+  color: #13356c;
   font-family: "Ubuntu", sans-serif;
 }
 
 h3,
 h2 span {
+  color: #13356c;
   font-family: "Ubuntu", sans-serif;
 }
 
 h4,
 h2 span {
+  color: #13356c;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -137,6 +142,62 @@ main .main {
   width: 80vw;
 }
 
+.new-products,
+.from-shop {
+  display: flex;
+  overflow: scroll;
+  padding-block: 3rem;
+  text-align: center;
+}
+.new-products-title, .new-products-from-shop,
+.from-shop-title,
+.from-shop-from-shop {
+  border-bottom-style: dashed;
+  border-bottom-width: 2px;
+  border-color: #13356c;
+}
+.new-products-title h1, .new-products-from-shop h1,
+.from-shop-title h1,
+.from-shop-from-shop h1 {
+  font-size: large;
+  margin-block: 2rem;
+  padding-left: 1rem;
+}
+.new-products .product,
+.from-shop .product {
+  background: #f4f4f4;
+  border-left: unset;
+  margin-inline: 0.5rem;
+  width: 15rem;
+}
+.new-products .product button,
+.from-shop .product button {
+  background: #13356c;
+  border: 3px solid #13356c;
+  border-radius: 0.3rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+}
+.new-products .product div,
+.from-shop .product div {
+  background-position: center;
+  background-size: contain;
+  height: 15rem;
+  width: 15rem;
+}
+.new-products .product p,
+.new-products .product button,
+.from-shop .product p,
+.from-shop .product button {
+  margin-block: 1rem;
+}
+.new-products .product span,
+.from-shop .product span {
+  border-top: 2px solid #13356c;
+  font-size: 1.5rem;
+}
+
 section.sec-1 {
   background-position: center;
   background-repeat: no-repeat;
@@ -166,6 +227,9 @@ section.sec-1 .sec-1-inner div button:first-of-type {
   background: #13356c;
   border: 3px solid #13356c;
   border-radius: 0.3rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
 }
 section.sec-1 .sec-1-inner div button:last-of-type {
   background: none;
@@ -177,12 +241,19 @@ section.sec-1 .sec-1-inner div h1 {
   text-decoration: underline;
 }
 section.sec-1 .sec-1-inner div h2 {
+  color: #eee;
   font-size: 6rem;
   margin-block: 1rem;
   text-align: center;
 }
 section.sec-1 .sec-1-inner div h3 {
+  color: unset;
   font-style: italic;
+  margin-top: 1rem;
+  text-align: right;
+}
+section.sec-1 .sec-1-inner div p {
+  text-align: right;
 }
 section.sec-1 .sec-1-inner div span {
   color: #ddd;
@@ -196,14 +267,87 @@ section.sec-2 {
   padding-block: 4rem;
 }
 section.sec-2 .sec-2-inner {
+  border: 5px solid #f5f7f9;
   margin: 2rem;
+  padding: 2rem;
   text-align: center;
+}
+section.sec-2 .sec-2-inner:hover {
+  cursor: pointer;
+  border: 5px solid #13356c;
 }
 section.sec-2 .sec-2-inner p {
   margin-block: 0.5rem;
 }
 section.sec-2 .sec-2-inner div img {
   width: 5rem;
+}
+section.sec-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-block: 4rem;
+  text-align: center;
+}
+section.sec-3 .sec-3-inner {
+  margin-block: 1rem;
+  width: 20rem;
+}
+section.sec-3 .sec-3-inner img {
+  width: 6rem;
+}
+section.sec-3 .sec-3-inner p {
+  padding-block: 1rem;
+}
+section.sec-4 .sec-4-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section.sec-4 .sec-4-inner .contact {
+  margin-block: 2rem;
+  padding-inline: 1rem;
+  width: 50rem;
+}
+section.sec-4 .sec-4-inner .contact-info {
+  display: flex;
+  margin-block: 1.5rem;
+}
+section.sec-4 .sec-4-inner .contact-info div:last-child {
+  margin-inline: 1rem;
+}
+section.sec-4 .sec-4-inner .contact-info div img {
+  width: 2rem;
+}
+section.sec-4 .sec-4-inner .contact .form form button {
+  background: #13356c;
+  border: 3px solid #13356c;
+  border-radius: 0.3rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+}
+section.sec-4 .sec-4-inner .contact .form form h1 {
+  border-bottom-style: dashed;
+  border-bottom-width: 2px;
+  border-color: #13356c;
+  font-size: 2rem;
+}
+section.sec-4 .sec-4-inner .contact .form form input,
+section.sec-4 .sec-4-inner .contact .form form textarea {
+  margin-block: 1rem;
+  outline: none;
+  padding: 0.75rem;
+  width: 94%;
+}
+section.sec-4 .sec-4-inner .contact .form form input[placeholder],
+section.sec-4 .sec-4-inner .contact .form form textarea[placeholder] {
+  color: #13356c;
+  font-style: italic;
+}
+section.sec-4 .sec-4-inner .contact .form form textarea {
+  height: 15rem;
+  resize: none;
 }
 
 @media (max-width: 1350px) {
@@ -237,6 +381,59 @@ section.sec-1 .sec-1-inner div p {
 @media (max-width: 308px) {
   section.sec-1 .sec-1-inner div h2 {
     font-size: 3rem;
+  }
+}
+footer {
+  background: #111;
+  color: #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-inline: 1rem;
+}
+footer .footer {
+  margin-block: 1.5rem;
+  width: 25rem;
+}
+footer .footer .contact-info {
+  align-items: center;
+  display: flex;
+  margin-block: 1rem;
+}
+footer .footer div:first-of-type img {
+  margin-right: 0.5rem;
+}
+footer .footer div span {
+  margin-left: 1rem;
+}
+footer .footer div svg {
+  background: #fff;
+  border-radius: 50%;
+  fill: #13356c;
+  height: 1rem;
+  margin-inline: 0.2rem;
+  padding: 0.3rem;
+  width: 1rem;
+  transform: translateY(0.5rem);
+  border-radius: unset;
+  height: 2rem;
+  width: 2rem;
+}
+footer .footer h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-block: 1rem;
+}
+footer + p {
+  background: #111;
+  color: #fff;
+  padding-block: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 1303px) {
+  footer {
+    justify-content: space-between;
   }
 }
 

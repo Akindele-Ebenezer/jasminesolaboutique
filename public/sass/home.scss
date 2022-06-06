@@ -10,6 +10,53 @@ main {
     }
 }
 
+.new-products,
+.from-shop {
+    display: flex;
+    overflow: scroll;
+    padding-block: 3rem;
+    text-align: center;
+
+    &-title,
+    &-from-shop {
+        @include dashed-border();
+
+        h1 {
+            font-size: large;
+            margin-block: 2rem;
+            padding-left: 1rem;
+        }
+    }
+
+    .product {
+        background: #f4f4f4; 
+        border-left: unset; 
+        margin-inline: .5rem;
+        width: 15rem;
+
+        button {
+            @include button();
+        }
+
+        div {
+            background-position: center;
+            background-size: contain;
+            height: 15rem;
+            width: 15rem;
+        }
+
+        p,
+        button {
+            margin-block: 1rem;
+        }
+
+        span {
+            border-top: 2px solid $color-1;
+            font-size: 1.5rem;
+        }
+    } 
+}
+
 section {
     &.sec-1 { 
         background-position: center; 
@@ -37,9 +84,7 @@ section {
                     margin-block: 1rem;
 
                     &:first-of-type {
-                        background: $color-1;
-                        border: 3px solid $color-1;
-                        border-radius: .3rem;
+                        @include button();
                     }
 
                     &:last-of-type {
@@ -55,13 +100,21 @@ section {
                 }
 
                 h2 {
+                    color: #eee;
                     font-size: 6rem;
                     margin-block: 1rem;
                     text-align: center;   
                 }
 
                 h3 {
+                    color: unset;
                     font-style: italic;
+                    margin-top: 1rem;
+                    text-align: right;
+                }
+
+                p {
+                    text-align: right;
                 }
 
                 span {
@@ -80,8 +133,15 @@ section {
         padding-block: 4rem;
 
         .sec-2-inner {
+            border: 5px solid $color-3;
             margin: 2rem;
+            padding: 2rem;
             text-align: center;
+
+            &:hover {
+                cursor: pointer;
+                border: 5px solid $color-1;
+            }
 
             p {
                 margin-block: .5rem;
@@ -90,6 +150,87 @@ section {
             div {
                 img {
                     width: 5rem;
+                }
+            }
+        }
+    }
+
+    &.sec-3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-block: 4rem;
+        text-align: center;
+
+        .sec-3-inner {
+            margin-block: 1rem;
+            width: 20rem;
+
+            img {
+                width: 6rem;
+            }
+
+            p {
+                padding-block: 1rem;
+            }
+        }
+    }
+
+    &.sec-4 {
+        .sec-4-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .contact {
+                margin-block: 2rem;
+                padding-inline: 1rem;
+                width: 50rem;
+
+                &-info {
+                    display: flex;
+                    margin-block: 1.5rem;
+
+                    div {
+                        &:last-child {
+                            margin-inline: 1rem;
+                        }
+
+                        img {
+                            width: 2rem;
+                        }
+                    }
+                }
+
+                .form {
+                    form {
+                        button {
+                            @include button();
+                        }
+
+                        h1 {
+                            @include dashed-border();
+                            font-size: 2rem;
+                        }
+
+                        input,
+                        textarea {
+                            margin-block: 1rem;
+                            outline: none;
+                            padding: .75rem;
+                            width: 94%;
+
+                            &[placeholder] {
+                                color: $color-1;
+                                font-style: italic;
+                            }
+                        }
+
+                        textarea {
+                            height: 15rem;
+                            resize: none;
+                        }
+                    }
                 }
             }
         }
@@ -161,3 +302,5 @@ section {
         }
     }
 }
+
+@import 'footer';
