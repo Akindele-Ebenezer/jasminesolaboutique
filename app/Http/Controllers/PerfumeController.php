@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Perfume;
 
-class HomeController extends Controller
+class PerfumeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,15 +14,15 @@ class HomeController extends Controller
      */
     public function index()
     { 
-        $page_title = 'SHOP';
+        $page_title = 'PERFUMES';
 
         $Perfumes = Perfume::all(); 
 
         return view('all_products', [
             'page_title' => $page_title,
-            'perfumes' => $perfumes,
-        ]); 
-    } 
+            'Perfumes' => $Perfumes,
+        ]);
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -51,9 +51,17 @@ class HomeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        //
+    public function show($ProductId)
+    { 
+        $PerfumeDetails = Perfume::find($ProductId);
+        $Perfumes = Perfume::all(); 
+        $page_title = $PerfumeDetails->Name;
+        
+        return view('purchase_now', [
+            'page_title' => $page_title,
+            'PerfumeDetails' => $PerfumeDetails, 
+            'Perfumes' => $Perfumes, 
+        ]); 
     }
 
     /**

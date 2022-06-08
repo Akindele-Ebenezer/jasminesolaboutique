@@ -11,6 +11,7 @@
 $color-1: #13356c;
 $color-2: #eee;
 $color-3: #f5f7f9; 
+$color-4: #ff6c6c;
 
 @mixin button {
     background: $color-1;
@@ -47,12 +48,40 @@ $color-3: #f5f7f9;
     width: 100vw;
 }
 
+@mixin product { 
+    border-left: unset; 
+    margin-inline: .5rem;
+    text-align: center;
+    width: 15rem;
+
+    button {
+        @include button();
+    }
+
+    div {
+        background-position: center;
+        background-size: contain;
+        height: 15rem;
+        width: 15rem;
+    }
+
+    p,
+    button {
+        margin-block: 1rem;
+    }
+
+    span {
+        border-top: 2px solid $color-1;
+        font-size: 1.5rem;
+    }
+}
+
 $headings: 1, 2, 3, 4;
 
 @each $heading in $headings {
     h#{$heading},
     h2 span {
-        color: $color-1;
+        color: $color-4;
         font-family: 'Ubuntu', sans-serif;
     }
 }

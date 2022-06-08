@@ -78,6 +78,7 @@ header {
 
         svg {
             @include icons();
+            border-radius: unset;
             height: 2rem;
             padding: unset;
             width: 2rem;

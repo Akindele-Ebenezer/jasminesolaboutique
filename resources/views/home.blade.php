@@ -19,71 +19,28 @@
         <h1>AVAILABLE PRODUCTS</h1>
     </div>
     <div class="new-products">
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/img.webp') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>ORDER</button>
-        </div>
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/img.webp') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>ORDER</button>
-        </div>
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/img.webp') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>ORDER</button>
-        </div>
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/img.webp') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>ORDER</button>
-        </div>
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/img.webp') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>ORDER</button>
-        </div>
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/img.webp') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>ORDER</button>
-        </div>
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/img.webp') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>ORDER</button>
-        </div>
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/img.webp') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>ORDER</button>
-        </div>
+        @foreach($Perfumes as $Perfume)
+            <form action="/PurchaseNow/{{ $Perfume->Id }}" method="get">
+                <div class="product">
+                    <div style="background-image: url('/images/perfumes/{{ $Perfume->Image }}')"></div>
+                    <p>{{ $Perfume->Name }}</p>
+                    <span>₦ {{ $Perfume->Price }}</span>
+                    <br>
+                    <button>ORDER</button>
+                </div>
+            </form>
+        @endforeach
     </div>
 
     <section class="sec-2">
-        <div class="sec-2-inner">
-            <div>
-                <img src="{{ asset('images/perfume.png') }}">
+        <a href="{{ route('Perfumes') }}">
+            <div class="sec-2-inner">
+                <div>
+                    <img src="{{ asset('images/perfume.png') }}">
+                </div>
+                <p>PERFUMES</p>
             </div>
-            <p>PERFUMES</p>
-        </div>
+        </a>
         <div class="sec-2-inner">
             <div>
                 <img src="{{ asset('images/shopping-bag.png') }}">
@@ -132,62 +89,17 @@
         <h1>FROM SHOP</h1>
     </div>
     <div class="from-shop">
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/imgg.jpg') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>BUY</button>
-        </div>
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/imgg.jpg') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>BUY</button>
-        </div>
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/imgg.jpg') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>BUY</button>
-        </div>
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/imgg.jpg') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>BUY</button>
-        </div>
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/imgg.jpg') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>BUY</button>
-        </div>
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/imgg.jpg') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>BUY</button>
-        </div>
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/imgg.jpg') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>BUY</button>
-        </div>
-        <div class="product">
-            <div style="background-image: url('{{ asset('images/imgg.jpg') }}')"></div>
-            <p>Armaf Club De Nuit Women EDP 105ml</p>
-            <span>₦25,500</span>
-            <br>
-            <button>BUY</button>
-        </div>
+        @foreach($Perfumes as $Perfume)
+            <form action="/PurchaseNow/{{ $Perfume->Id }}" method="get">
+                <div class="product">
+                    <div style="background-image: url('/images/perfumes/{{ $Perfume->Image }}')"></div>
+                    <p>{{ $Perfume->Name }}</p>
+                    <span>₦ {{ $Perfume->Price }}</span>
+                    <br>
+                    <button>ORDER</button>
+                </div>
+            </form>
+        @endforeach 
     </div>
 
     <section class="sec-4">

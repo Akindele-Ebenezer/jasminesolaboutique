@@ -1,0 +1,109 @@
+.shop { 
+    .shop-inner {
+        .purchase-now {
+            // align-items: center;
+            border: 1px solid #eee;
+            display: flex;
+            padding: 2rem;
+
+            .purchase-now-inner {
+                &:last-child {
+                    margin-left: 2rem;
+                }
+
+                button {
+                    @include button();
+                    margin-block: 3rem;
+                    width: 100%;
+                }
+
+                h1 {
+                    background: unset; 
+                    font-size: 2rem;
+                    margin-block: 1rem;
+                    padding: 1rem 0;
+                }
+
+                h1,
+                h2, 
+                h3 {
+                  color: $color-1;  
+                }
+                p {
+                    margin-block: 1rem;
+                }
+
+                .purchase-now-product {
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    height: 45rem;
+                    width: 45rem;
+                }
+
+                span {
+                    border-top: 2px solid $color-2;
+                    color: $color-1;
+                    font-size: 2rem;
+                }
+
+                ul {
+                    li { 
+                        border-bottom: 1px solid #ddd;
+                        letter-spacing: .08rem;
+                    }
+                }
+            }
+        }
+    
+        .related-products-wrapper {
+            margin-top: 4rem;
+
+            h1 { 
+                font-size: 2rem;
+            }
+            
+            .related-products {
+                align-items: start;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+        }
+    }
+}
+
+@media (max-width: 894px) {
+    .shop {
+        .shop-inner {
+            .purchase-now {
+                flex-wrap: wrap;
+
+                .purchase-now-inner {
+                    &:last-child {
+                        margin-left: unset;
+                    }
+
+                    .purchase-now-product {
+                        width: 90vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 894px) {
+    .shop {
+        .shop-inner {
+            .purchase-now { 
+                .purchase-now-inner {
+                    &:first-of-type {
+                        h1 {
+                            display: none;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}

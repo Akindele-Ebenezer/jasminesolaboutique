@@ -10,25 +10,25 @@
 
 h1,
 h2 span {
-  color: #13356c;
+  color: #ff6c6c;
   font-family: "Ubuntu", sans-serif;
 }
 
 h2,
 h2 span {
-  color: #13356c;
+  color: #ff6c6c;
   font-family: "Ubuntu", sans-serif;
 }
 
 h3,
 h2 span {
-  color: #13356c;
+  color: #ff6c6c;
   font-family: "Ubuntu", sans-serif;
 }
 
 h4,
 h2 span {
-  color: #13356c;
+  color: #ff6c6c;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -116,6 +116,7 @@ header nav:last-child ul li a:hover {
   padding: 0.3rem;
   width: 1rem;
   transform: translateY(0.5rem);
+  border-radius: unset;
   height: 2rem;
   padding: unset;
   width: 2rem;
@@ -139,7 +140,7 @@ main {
   justify-content: center;
 }
 main .main {
-  width: 80vw;
+  width: 85vw;
 }
 
 .new-products,
@@ -165,9 +166,9 @@ main .main {
 }
 .new-products .product,
 .from-shop .product {
-  background: #f4f4f4;
   border-left: unset;
   margin-inline: 0.5rem;
+  text-align: center;
   width: 15rem;
 }
 .new-products .product button,
@@ -198,6 +199,9 @@ main .main {
   font-size: 1.5rem;
 }
 
+section a {
+  color: #000;
+}
 section.sec-1 {
   background-position: center;
   background-repeat: no-repeat;
@@ -381,6 +385,221 @@ section.sec-1 .sec-1-inner div p {
 @media (max-width: 308px) {
   section.sec-1 .sec-1-inner div h2 {
     font-size: 3rem;
+  }
+}
+.shop {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block: 10rem;
+  padding-inline: 1rem;
+}
+.shop .shop-inner:first-child {
+  border: 1px solid #eee;
+  padding: 2rem;
+  width: 20rem;
+}
+.shop .shop-inner:last-child {
+  display: flex;
+  flex-basis: 79rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-inline: 2rem;
+}
+.shop .shop-inner h1 {
+  border-bottom: 2px solid #eee;
+  color: #333;
+  font-size: 2rem;
+  padding: 1rem;
+  text-decoration: overline;
+  text-decoration-color: #bbb;
+  text-decoration-style: dotted;
+}
+.shop .shop-inner .categories div {
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  margin-block: 2rem;
+  width: 20rem;
+}
+.shop .shop-inner .categories ul li {
+  margin-block: 0.2rem;
+}
+.shop .shop-inner .categories ul li.active {
+  border-bottom: 2px solid #13356c;
+  color: #13356c;
+}
+.shop .shop-inner .product {
+  border-left: unset;
+  margin-inline: 0.5rem;
+  text-align: center;
+  width: 15rem;
+  margin: 2rem 0.5rem;
+}
+.shop .shop-inner .product button {
+  background: #13356c;
+  border: 3px solid #13356c;
+  border-radius: 0.3rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+}
+.shop .shop-inner .product div {
+  background-position: center;
+  background-size: contain;
+  height: 15rem;
+  width: 15rem;
+}
+.shop .shop-inner .product p,
+.shop .shop-inner .product button {
+  margin-block: 1rem;
+}
+.shop .shop-inner .product span {
+  border-top: 2px solid #13356c;
+  font-size: 1.5rem;
+}
+.shop .shop-inner .most-popular .most-popular-inner {
+  align-items: center;
+  border-bottom: 1px solid #bbb;
+  display: flex;
+  padding-block: 2rem;
+}
+.shop .shop-inner .most-popular .most-popular-inner div:first-child {
+  background-position: center;
+  background-size: cover;
+  height: 8rem;
+  width: 8rem;
+}
+.shop .shop-inner .most-popular .most-popular-inner div:last-child {
+  margin-left: 1rem;
+}
+.shop .shop-inner .most-popular .most-popular-inner div:last-child button {
+  background: #13356c;
+  border: 3px solid #13356c;
+  border-radius: 0.3rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+}
+.shop .shop-inner .most-popular .most-popular-inner div:last-child h2 {
+  padding-block: 0.5rem;
+}
+
+.title {
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+.title .title-inner {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.title .title-inner h1,
+.title .title-inner span {
+  color: #eee;
+  text-align: center;
+}
+.title .title-inner h1 {
+  font-style: italic;
+  font-size: 4rem;
+  margin-block: 3rem;
+}
+.title .title-inner span {
+  letter-spacing: 0.03rem;
+}
+
+@media (max-width: 1894px) {
+  .shop .shop-inner:first-child {
+    order: 2;
+    width: 90vw;
+  }
+  .shop .shop-inner:last-child {
+    order: 1;
+  }
+  .shop .shop-inner .categories {
+    margin-top: 2rem;
+  }
+}
+.shop .shop-inner .purchase-now {
+  border: 1px solid #eee;
+  display: flex;
+  padding: 2rem;
+}
+.shop .shop-inner .purchase-now .purchase-now-inner:last-child {
+  margin-left: 2rem;
+}
+.shop .shop-inner .purchase-now .purchase-now-inner button {
+  background: #13356c;
+  border: 3px solid #13356c;
+  border-radius: 0.3rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  margin-block: 3rem;
+  width: 100%;
+}
+.shop .shop-inner .purchase-now .purchase-now-inner h1 {
+  background: unset;
+  font-size: 2rem;
+  margin-block: 1rem;
+  padding: 1rem 0;
+}
+.shop .shop-inner .purchase-now .purchase-now-inner h1,
+.shop .shop-inner .purchase-now .purchase-now-inner h2,
+.shop .shop-inner .purchase-now .purchase-now-inner h3 {
+  color: #13356c;
+}
+.shop .shop-inner .purchase-now .purchase-now-inner p {
+  margin-block: 1rem;
+}
+.shop .shop-inner .purchase-now .purchase-now-inner .purchase-now-product {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 45rem;
+  width: 45rem;
+}
+.shop .shop-inner .purchase-now .purchase-now-inner span {
+  border-top: 2px solid #eee;
+  color: #13356c;
+  font-size: 2rem;
+}
+.shop .shop-inner .purchase-now .purchase-now-inner ul li {
+  border-bottom: 1px solid #ddd;
+  letter-spacing: 0.08rem;
+}
+.shop .shop-inner .related-products-wrapper {
+  margin-top: 4rem;
+}
+.shop .shop-inner .related-products-wrapper h1 {
+  font-size: 2rem;
+}
+.shop .shop-inner .related-products-wrapper .related-products {
+  align-items: start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 894px) {
+  .shop .shop-inner .purchase-now {
+    flex-wrap: wrap;
+  }
+  .shop .shop-inner .purchase-now .purchase-now-inner:last-child {
+    margin-left: unset;
+  }
+  .shop .shop-inner .purchase-now .purchase-now-inner .purchase-now-product {
+    width: 90vw;
+  }
+}
+@media (min-width: 894px) {
+  .shop .shop-inner .purchase-now .purchase-now-inner:first-of-type h1 {
+    display: none;
   }
 }
 footer {

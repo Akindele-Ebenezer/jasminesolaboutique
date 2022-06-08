@@ -6,7 +6,7 @@ main {
     justify-content: center;
 
     .main {
-        width: 80vw;
+        width: 85vw;
     }
 }
 
@@ -29,35 +29,15 @@ main {
     }
 
     .product {
-        background: #f4f4f4; 
-        border-left: unset; 
-        margin-inline: .5rem;
-        width: 15rem;
-
-        button {
-            @include button();
-        }
-
-        div {
-            background-position: center;
-            background-size: contain;
-            height: 15rem;
-            width: 15rem;
-        }
-
-        p,
-        button {
-            margin-block: 1rem;
-        }
-
-        span {
-            border-top: 2px solid $color-1;
-            font-size: 1.5rem;
-        }
+        @include product();
     } 
 }
 
 section {
+    a {
+        color: #000;
+    }
+
     &.sec-1 { 
         background-position: center; 
         background-repeat: no-repeat;
@@ -303,4 +283,6 @@ section {
     }
 }
 
+@import 'shop';
+@import 'purchase-now';
 @import 'footer';
