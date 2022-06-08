@@ -11,6 +11,11 @@
                 <center><button>SHOP NOW</button><button>CONTACT</button></center>
                 <h3>SAVE UP TO 50%</h3>
                 <p>IF YOU BUY UP TO THREE PRODUCTS</p>
+                <span class="we-sell">
+                    <span>We Sell</span>
+                    <span class="typer heading" id="main" data-words="Perfumes, Bags, Wig Oils, Singlets, Boxers, Shoes" data-delay="100" data-deleteDelay="1000"></span>
+                    <span class="cursor" data-owner="main"></span>
+                </span>
             </div>
         </div>
     </section>
@@ -64,6 +69,12 @@
                 <img src="{{ asset('images/vest.png') }}">
             </div>
             <p>SINGLETS</p>
+        </div>
+        <div class="sec-2-inner">
+            <div>
+                <img src="{{ asset('images/pants.png') }}">
+            </div>
+            <p>BOXERS</p>
         </div>
     </section>
 
@@ -173,4 +184,8 @@
         </div>
     </section>
 
+@endsection
+
+@section('scripts')
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 @endsection

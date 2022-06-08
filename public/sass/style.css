@@ -32,6 +32,10 @@ h2 span {
   font-family: "Ubuntu", sans-serif;
 }
 
+.heading {
+  font-family: "Ubuntu", sans-serif;
+}
+
 header {
   position: fixed;
   width: 100vw;
@@ -262,6 +266,12 @@ section.sec-1 .sec-1-inner div p {
 section.sec-1 .sec-1-inner div span {
   color: #ddd;
   font-size: 4rem;
+}
+section.sec-1 .sec-1-inner div span.we-sell span:first-child {
+  font-size: 2rem;
+}
+section.sec-1 .sec-1-inner div span#main {
+  color: #ff7676 !important;
 }
 section.sec-2 {
   background: #f5f7f9;

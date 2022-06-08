@@ -11,7 +11,7 @@
     </div>
 @endsection
 
-@section('all_products')
+@section('Perfumes')
     @foreach($Perfumes as $Perfume)
         <form action="/PurchaseNow/{{ $Perfume->Id }}" method="get">
             <div class="product">

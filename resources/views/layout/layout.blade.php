@@ -108,6 +108,7 @@
         </div>
     </footer>
     <p>Copyright 2022 &copy;JASMINESolaBoutique. All rights reserved.</p>
+    @yield('scripts')
 
 </body>
 </html>

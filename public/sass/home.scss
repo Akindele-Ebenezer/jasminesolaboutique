@@ -99,7 +99,19 @@ section {
 
                 span {
                     color: #ddd;
-                    font-size: 4rem;
+                    font-size: 4rem; 
+
+                    &.we-sell {
+                        span {
+                            &:first-child {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                    
+                    &#main {
+                        color: lighten($color-4, 2) !important;
+                    }
                 }
             }
         }

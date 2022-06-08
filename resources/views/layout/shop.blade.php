@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="shop-inner"> 
-            @yield('all_products')
+            @yield('Perfumes')
             @yield('purchase_now')
         </div>
     </div>

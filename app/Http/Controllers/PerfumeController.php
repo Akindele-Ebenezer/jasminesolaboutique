@@ -18,7 +18,7 @@ class PerfumeController extends Controller
 
         $Perfumes = Perfume::all(); 
 
-        return view('all_products', [
+        return view('Perfumes', [
             'page_title' => $page_title,
             'Perfumes' => $Perfumes,
         ]);
@@ -57,7 +57,7 @@ class PerfumeController extends Controller
         $Perfumes = Perfume::all(); 
         $page_title = $PerfumeDetails->Name;
         
-        return view('purchase_now', [
+        return view('PurchaseNow', [
             'page_title' => $page_title,
             'PerfumeDetails' => $PerfumeDetails, 
             'Perfumes' => $Perfumes, 
