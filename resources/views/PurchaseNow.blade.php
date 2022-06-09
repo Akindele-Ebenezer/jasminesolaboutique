@@ -30,7 +30,7 @@
         <h1>RELATED PRODUCTS</h1>
         <div class="related-products"> 
             @foreach($Perfumes as $Perfume)
-                <form action="/PurchaseNow/{{ $Perfume->Id }}" method="get">
+                <a href="/PurchaseNow/{{ $Perfume->Id }}">
                     <div class="product">
                         <div style="background-image: url('/images/perfumes/{{ $Perfume->Image }}')"></div>
                         <p>{{ $Perfume->Name }}</p>
@@ -38,7 +38,7 @@
                         <br>
                         <button>ORDER</button>
                     </div>
-                </form>
+                </a>
             @endforeach
         </div>
     </div>

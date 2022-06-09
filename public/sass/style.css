@@ -32,6 +32,10 @@ h2 span {
   font-family: "Ubuntu", sans-serif;
 }
 
+a {
+  color: #111;
+}
+
 .heading {
   font-family: "Ubuntu", sans-serif;
 }
@@ -203,9 +207,6 @@ main .main {
   font-size: 1.5rem;
 }
 
-section a {
-  color: #000;
-}
 section.sec-1 {
   background-position: center;
   background-repeat: no-repeat;
@@ -496,6 +497,9 @@ section.sec-1 .sec-1-inner div p {
 .shop .shop-inner .most-popular .most-popular-inner div:last-child h2 {
   padding-block: 0.5rem;
 }
+.shop-wrapper {
+  margin-block: 1rem;
+}
 
 .title {
   background-position: center;
@@ -523,6 +527,11 @@ section.sec-1 .sec-1-inner div p {
 .title .title-inner span {
   letter-spacing: 0.03rem;
 }
+.title .title-inner span strong {
+  border-bottom: 2px solid #ff6c6c;
+  color: #ddd;
+  font-weight: unset;
+}
 
 @media (max-width: 1894px) {
   .shop .shop-inner:first-child {
@@ -534,6 +543,14 @@ section.sec-1 .sec-1-inner div p {
   }
   .shop .shop-inner .categories {
     margin-top: 2rem;
+  }
+}
+@media (max-width: 1016px) {
+  .shop {
+    margin-block: 5rem;
+  }
+  .shop-wrapper {
+    margin-block: 0;
   }
 }
 .shop .shop-inner .purchase-now {

@@ -88,6 +88,10 @@
             }
         }
     }
+
+    &-wrapper {
+        margin-block: 1rem;
+    }
 }
 
 .title { 
@@ -117,6 +121,12 @@
 
         span {
             letter-spacing: .03rem;
+
+            strong {
+                border-bottom: 2px solid $color-4;
+                color: #ddd;
+                font-weight: unset;            
+            }
         }
     }
 }
@@ -136,6 +146,16 @@
             .categories {
                 margin-top: 2rem;
             }
+        }
+    }
+}
+
+@media(max-width: 1016px) {
+    .shop {
+        margin-block: 5rem;
+
+        &-wrapper {
+            margin-block: 0;
         }
     }
 }

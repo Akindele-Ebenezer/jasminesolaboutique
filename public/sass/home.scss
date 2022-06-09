@@ -33,11 +33,7 @@ main {
     } 
 }
 
-section {
-    a {
-        color: #000;
-    }
-
+section { 
     &.sec-1 { 
         background-position: center; 
         background-repeat: no-repeat;

@@ -4,7 +4,7 @@
 @section('content')
 @yield('page_title')
 
-    <div class="shop">
+    <div class="shop {{ Request::is('Perfumes') ? 'shop-wrapper' : '' }}">
         <div class="shop-inner">
             <div class="categories">
                 <h1>CATEGORIES</h1>
@@ -21,7 +21,7 @@
             <div class="most-popular">
                 <h1>MOST POPULAR</h1>
                 @foreach($Perfumes as $Perfume)
-                <form action="/PurchaseNow/{{ $Perfume->Id }}" method="get">
+                <a href="/PurchaseNow/{{ $Perfume->Id }}">
                     <div class="most-popular-inner">
                         <div style="background-image: url('/images/perfumes/{{ $Perfume->Image }}')"></div>
                         <div>
@@ -31,7 +31,7 @@
                             <button>View</button>
                         </div>
                     </div>
-                </form>
+                </a>
                 @endforeach 
             </div>
         </div>
