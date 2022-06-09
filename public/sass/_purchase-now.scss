@@ -60,6 +60,7 @@
 
             h1 { 
                 font-size: 2rem;
+                text-align: center;
             }
             
             .related-products {
@@ -81,9 +82,12 @@
                 .purchase-now-inner {
                     &:last-child {
                         margin-left: unset;
+                        width: 90vw;
                     }
 
                     .purchase-now-product {
+                        height: 25rem;
+                        margin-block: 1rem;
                         width: 90vw;
                     }
                 }

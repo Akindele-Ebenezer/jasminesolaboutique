@@ -269,7 +269,7 @@ section.sec-1 .sec-1-inner div span {
   font-size: 4rem;
 }
 section.sec-1 .sec-1-inner div span.we-sell span:first-child {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 section.sec-1 .sec-1-inner div span#main {
   color: #ff7676 !important;
@@ -605,6 +605,7 @@ section.sec-1 .sec-1-inner div p {
 }
 .shop .shop-inner .related-products-wrapper h1 {
   font-size: 2rem;
+  text-align: center;
 }
 .shop .shop-inner .related-products-wrapper .related-products {
   align-items: start;
@@ -619,8 +620,11 @@ section.sec-1 .sec-1-inner div p {
   }
   .shop .shop-inner .purchase-now .purchase-now-inner:last-child {
     margin-left: unset;
+    width: 90vw;
   }
   .shop .shop-inner .purchase-now .purchase-now-inner .purchase-now-product {
+    height: 25rem;
+    margin-block: 1rem;
     width: 90vw;
   }
 }
