@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Bag;
 use Illuminate\Http\Request;
-use App\Models\Perfume;
 
-class PerfumeController extends Controller
+class BagController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,9 +13,9 @@ class PerfumeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    { 
-        $Products = Perfume::all(); 
-        return view('Perfumes', [
+    {
+        $Products = Bag::all(); 
+        return view('Bags', [
             'Products' => $Products,
         ]);
     }
@@ -44,31 +44,31 @@ class PerfumeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Bag  $bag
      * @return \Illuminate\Http\Response
      */
     public function show($ProductId)
-    { 
-        $PerfumeDetails = Perfume::find($ProductId);
-        $Products = Perfume::all(); 
-        $page_title = $PerfumeDetails->Name;
-        $ImageFolder = 'perfumes';
-
+    {
+        $BagDetails = Bag::find($ProductId);
+        $Products = Bag::all(); 
+        $page_title = $BagDetails->Name;
+        $ImageFolder = 'bags';  
+        
         return view('PurchaseNow', [
             'page_title' => $page_title,
-            'PerfumeDetails' => $PerfumeDetails, 
+            'BagDetails' => $BagDetails, 
             'Products' => $Products, 
-            'ImageFolder' => $ImageFolder, 
+            'ImageFolder' => $ImageFolder,  
         ]); 
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Bag  $bag
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Bag $bag)
     {
         //
     }
@@ -77,10 +77,10 @@ class PerfumeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Bag  $bag
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Bag $bag)
     {
         //
     }
@@ -88,10 +88,10 @@ class PerfumeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Bag  $bag
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Bag $bag)
     {
         //
     }

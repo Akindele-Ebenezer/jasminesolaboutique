@@ -46,12 +46,14 @@
                 <p>PERFUMES</p>
             </div>
         </a>
-        <div class="sec-2-inner">
-            <div>
-                <img src="{{ asset('images/shopping-bag.png') }}">
+        <a href="{{ route('Bags') }}">
+            <div class="sec-2-inner">
+                <div>
+                    <img src="{{ asset('images/shopping-bag.png') }}">
+                </div>
+                <p>BAGS</p>
             </div>
-            <p>BAGS</p>
-        </div>
+        </a>
         <div class="sec-2-inner">
             <div>
                 <img src="{{ asset('images/high-heels.png') }}">

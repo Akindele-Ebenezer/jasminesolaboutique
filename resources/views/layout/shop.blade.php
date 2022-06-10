@@ -20,23 +20,29 @@
             </div>
             <div class="most-popular">
                 <h1>MOST POPULAR</h1>
-                @foreach($Perfumes as $Perfume)
-                <a href="/PurchaseNow/{{ $Perfume->Id }}">
+                @foreach($Products as $Product)
+                <form action="/PurchaseNow/{{ $ProductName }}/{{ $Product->Id }}">
                     <div class="most-popular-inner">
-                        <div style="background-image: url('/images/perfumes/{{ $Perfume->Image }}')"></div>
+                        <div style="background-image: url('/images/perfumes/{{ $Product->Image }}')"></div>
                         <div>
-                            <h2>{{ $Perfume->Name }}</h2>
-                            <span>₦ {{ $Perfume->Price }}</span>
+                            <h2>{{ $Product->Name }}</h2>
+                            <span>₦ {{ $Product->Price }}</span>
                             <br>
                             <button>View</button>
+                            <input type="hidden" name="ProductId" value="{{ $Product->Id }}">
+                            <input type="hidden" name="ProductName" value="{{ $Product->Name }}">
+                            <input type="hidden" name="ProductPrice" value="{{ $Product->Price }}">
+                            <input type="hidden" name="ProductImage" value="{{ $Product->Image }}">
+                            <input type="hidden" name="ProductDescription" value="{{ $Product->Description }}">
+                            <input type="hidden" name="ProductDetail" value="{{ $Product->Detail }}">
                         </div>
                     </div>
-                </a>
+                </form>
                 @endforeach 
             </div>
         </div>
         <div class="shop-inner"> 
-            @yield('Perfumes')
+            @yield('ProductTemp')
             @yield('purchase_now')
         </div>
     </div>
