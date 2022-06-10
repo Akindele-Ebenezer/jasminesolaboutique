@@ -53,12 +53,15 @@ class BagController extends Controller
         $Products = Bag::all(); 
         $page_title = $BagDetails->Name;
         $ImageFolder = 'bags';  
+        $ProductNameForRoute = ucfirst($ImageFolder);
         
         return view('PurchaseNow', [
             'page_title' => $page_title,
             'BagDetails' => $BagDetails, 
+            'RelatedProducts' => $Products, 
             'Products' => $Products, 
             'ImageFolder' => $ImageFolder,  
+            'ProductNameForRoute' => $ProductNameForRoute,
         ]); 
     }
 

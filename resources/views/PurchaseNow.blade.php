@@ -5,7 +5,7 @@
     $ProductImage = $_GET['ProductImage'];
     $ProductPrice = $_GET['ProductPrice'];
     $ProductDetail = $_GET['ProductDetail'];
-    $ProductDescription = $_GET['ProductDescription']; 
+    $ProductDescription = $_GET['ProductDescription'];  
 
 @endphp
 
@@ -43,9 +43,9 @@
             @foreach($RelatedProducts as $Product)
                 <form action="/PurchaseNow/{{ $ProductNameForRoute }}/{{ $ProductId }}">
                     <div class="product">
-                        <div style="background-image: url('/images/perfumes/{{ $ProductImage }}')"></div>
-                        <p>{{ $ProductName }}</p>
-                        <span>₦ {{ $ProductPrice }}</span>
+                        <div style="background-image: url('/images/{{ $ImageFolder }}/{{ $Product->Image }}')"></div>
+                        <p>{{ $Product->Name }}</p>
+                        <span>₦ {{ $Product->Price }}</span>
                         <br>
                         <button>ORDER</button>
                         <input type="hidden" name="ProductId" value="{{ $Product->Id }}">
