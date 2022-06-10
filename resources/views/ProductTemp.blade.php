@@ -24,7 +24,7 @@
                 <input type="hidden" name="ProductPrice" value="{{ $Product->Price }}">
                 <input type="hidden" name="ProductImage" value="{{ $Product->Image }}">
                 <input type="hidden" name="ProductDescription" value="{{ $Product->Description }}">
-                <input type="hidden" name="ProductDetail" value="{{ $Product->Detail }}">
+                <input type="hidden" name="ProductDetail" value="{{ $Product->ProductDetail }}">
                 <button>ORDER</button>
             </div>
         </form>

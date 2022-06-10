@@ -53,12 +53,15 @@ class PerfumeController extends Controller
         $Products = Perfume::all(); 
         $page_title = $PerfumeDetails->Name;
         $ImageFolder = 'perfumes';
-
+        $ProductNameForRoute = ucfirst($ImageFolder);
+ 
         return view('PurchaseNow', [
             'page_title' => $page_title,
             'PerfumeDetails' => $PerfumeDetails, 
+            'RelatedProducts' => $Products, 
             'Products' => $Products, 
             'ImageFolder' => $ImageFolder, 
+            'ProductNameForRoute' => $ProductNameForRoute, 
         ]); 
     }
 

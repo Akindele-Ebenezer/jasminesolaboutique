@@ -40,16 +40,22 @@
     <div class="related-products-wrapper">
         <h1>RELATED PRODUCTS</h1>
         <div class="related-products"> 
-            @foreach($Products as $Product)
-                <a href="/PurchaseNow/{{ $ProductId }}">
+            @foreach($RelatedProducts as $Product)
+                <form action="/PurchaseNow/{{ $ProductNameForRoute }}/{{ $ProductId }}">
                     <div class="product">
                         <div style="background-image: url('/images/perfumes/{{ $ProductImage }}')"></div>
                         <p>{{ $ProductName }}</p>
                         <span>₦ {{ $ProductPrice }}</span>
                         <br>
                         <button>ORDER</button>
+                        <input type="hidden" name="ProductId" value="{{ $Product->Id }}">
+                        <input type="hidden" name="ProductName" value="{{ $Product->Name }}">
+                        <input type="hidden" name="ProductPrice" value="{{ $Product->Price }}">
+                        <input type="hidden" name="ProductImage" value="{{ $Product->Image }}">
+                        <input type="hidden" name="ProductDescription" value="{{ $Product->Description }}">
+                        <input type="hidden" name="ProductDetail" value="{{ $Product->ProductDetail }}">
                     </div>
-                </a>
+                </form>
             @endforeach
         </div>
     </div>
