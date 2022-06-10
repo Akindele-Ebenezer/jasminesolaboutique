@@ -12,10 +12,13 @@ class IndexController extends Controller
         $page_title = 'SHOP';
 
         $Perfumes = Perfume::all(); 
+        $ImageFolder = 'perfumes';
+        $ProductNameForRoute = ucfirst($ImageFolder);
 
         return view('home', [
             'page_title' => $page_title,
             'Perfumes' => $Perfumes,
+            'ProductNameForRoute' => $ProductNameForRoute, 
         ]);  
     } 
     

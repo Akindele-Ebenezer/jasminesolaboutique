@@ -25,15 +25,21 @@
     </div>
     <div class="new-products">
         @foreach($Perfumes as $Perfume)
-            <a href="/PurchaseNow/{{ $Perfume->Id }}">
+            <form action="/PurchaseNow/{{ $ProductNameForRoute }}/{{ $Perfume->Id }}">
                 <div class="product">
                     <div style="background-image: url('/images/perfumes/{{ $Perfume->Image }}')"></div>
                     <p>{{ $Perfume->Name }}</p>
                     <span>₦ {{ $Perfume->Price }}</span>
                     <br>
                     <button>ORDER</button>
+                    <input type="hidden" name="ProductId" value="{{ $Perfume->Id }}">
+                    <input type="hidden" name="ProductName" value="{{ $Perfume->Name }}">
+                    <input type="hidden" name="ProductPrice" value="{{ $Perfume->Price }}">
+                    <input type="hidden" name="ProductImage" value="{{ $Perfume->Image }}">
+                    <input type="hidden" name="ProductDescription" value="{{ $Perfume->Description }}">
+                    <input type="hidden" name="ProductDetail" value="{{ $Perfume->ProductDetail }}">
                 </div>
-            </a>
+            </form>
         @endforeach
     </div>
 
@@ -103,15 +109,21 @@
     </div>
     <div class="from-shop">
         @foreach($Perfumes as $Perfume)
-            <a href="/PurchaseNow/{{ $Perfume->Id }}">
+            <form action="/PurchaseNow/{{ $ProductNameForRoute }}/{{ $Perfume->Id }}">
                 <div class="product">
                     <div style="background-image: url('/images/perfumes/{{ $Perfume->Image }}')"></div>
                     <p>{{ $Perfume->Name }}</p>
                     <span>₦ {{ $Perfume->Price }}</span>
                     <br>
                     <button>ORDER</button>
+                    <input type="hidden" name="ProductId" value="{{ $Perfume->Id }}">
+                    <input type="hidden" name="ProductName" value="{{ $Perfume->Name }}">
+                    <input type="hidden" name="ProductPrice" value="{{ $Perfume->Price }}">
+                    <input type="hidden" name="ProductImage" value="{{ $Perfume->Image }}">
+                    <input type="hidden" name="ProductDescription" value="{{ $Perfume->Description }}">
+                    <input type="hidden" name="ProductDetail" value="{{ $Perfume->ProductDetail }}">
                 </div>
-            </a>
+            </form>
         @endforeach 
     </div>
 

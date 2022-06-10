@@ -15,8 +15,12 @@ class BagController extends Controller
     public function index()
     {
         $Products = Bag::all(); 
+        $ImageFolder = 'perfumes';
+        $ProductNameForRoute = ucfirst($ImageFolder);
         return view('Bags', [
             'Products' => $Products,
+            'MostPopular' => $Products, 
+            'ProductNameForRoute' => $ProductNameForRoute, 
         ]);
     }
 
@@ -54,11 +58,12 @@ class BagController extends Controller
         $page_title = $BagDetails->Name;
         $ImageFolder = 'bags';  
         $ProductNameForRoute = ucfirst($ImageFolder);
-        
+         
         return view('PurchaseNow', [
             'page_title' => $page_title,
             'BagDetails' => $BagDetails, 
-            'RelatedProducts' => $Products, 
+            'RelatedProducts' => $Products,  
+            'MostPopular' => $Products, 
             'Products' => $Products, 
             'ImageFolder' => $ImageFolder,  
             'ProductNameForRoute' => $ProductNameForRoute,

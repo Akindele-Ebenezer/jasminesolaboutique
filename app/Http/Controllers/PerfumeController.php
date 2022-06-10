@@ -15,8 +15,12 @@ class PerfumeController extends Controller
     public function index()
     { 
         $Products = Perfume::all(); 
+        $ImageFolder = 'perfumes';
+        $ProductNameForRoute = ucfirst($ImageFolder);
         return view('Perfumes', [
             'Products' => $Products,
+            'MostPopular' => $Products, 
+            'ProductNameForRoute' => $ProductNameForRoute, 
         ]);
     }
 
@@ -58,6 +62,7 @@ class PerfumeController extends Controller
         return view('PurchaseNow', [
             'page_title' => $page_title,
             'PerfumeDetails' => $PerfumeDetails, 
+            'MostPopular' => $Products, 
             'RelatedProducts' => $Products, 
             'Products' => $Products, 
             'ImageFolder' => $ImageFolder, 

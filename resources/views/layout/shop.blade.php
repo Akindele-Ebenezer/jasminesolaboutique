@@ -1,7 +1,3 @@
-@php 
-$ProductNameForRoute = '';
-@endphp
-
 @extends('layout.layout')
 
 @section('title', $page_title . ' | Jasmine SOLA Boutique')
@@ -24,10 +20,10 @@ $ProductNameForRoute = '';
             </div>
             <div class="most-popular">
                 <h1>MOST POPULAR</h1>
-                @foreach($Products as $Product)
-                <form action="/PurchaseNow/Perfumes/{{ $Product->Id }}">
+                @foreach($MostPopular as $Product)
+                <form action="/PurchaseNow/{{ ucwords($ImageFolder) }}/{{ $Product->Id }}">
                     <div class="most-popular-inner">
-                        <div style="background-image: url('/images/{{ $ProductNameForRoute }}/{{ $Product->Image }}')"></div>
+                        <div style="background-image: url('/images/{{ $ImageFolder }}/{{ $Product->Image }}')"></div>
                         <div>
                             <h2>{{ $Product->Name }}</h2>
                             <span>₦ {{ $Product->Price }}</span>
@@ -40,7 +36,7 @@ $ProductNameForRoute = '';
                             <input type="hidden" name="ProductDescription" value="{{ $Product->Description }}">
                             <input type="hidden" name="ProductDetail" value="{{ $Product->Detail }}">
                         </div>
-                    </div>
+                    </div>  
                 </form>
                 @endforeach 
             </div>
