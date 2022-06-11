@@ -59,7 +59,7 @@ class BoxerController extends Controller
      */
     public function show($ProductId)
     {
-        $BagDetails = Boxer::find($ProductId);
+        $BoxerDetails = Boxer::find($ProductId);
         $Products = Boxer::all(); 
         $page_title = $BoxerDetails->Name;
         $ImageFolder = 'boxers';  
