@@ -72,18 +72,22 @@
             </div>
             <p>HAIR</p>
         </div>
-        <div class="sec-2-inner">
-            <div>
-                <img src="{{ asset('images/vest.png') }}">
+        <a href="{{ route('Singlets') }}">
+            <div class="sec-2-inner">
+                <div>
+                    <img src="{{ asset('images/vest.png') }}">
+                </div>
+                <p>SINGLETS</p>
             </div>
-            <p>SINGLETS</p>
-        </div>
-        <div class="sec-2-inner">
-            <div>
-                <img src="{{ asset('images/pants.png') }}">
+        </a>
+        <a href="{{ route('Boxers') }}">
+            <div class="sec-2-inner">
+                <div>
+                    <img src="{{ asset('images/pants.png') }}">
+                </div>
+                <p>BOXERS</p>
             </div>
-            <p>BOXERS</p>
-        </div>
+        </a>
     </section>
 
     <section class="sec-3">
