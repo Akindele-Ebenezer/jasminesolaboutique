@@ -588,6 +588,7 @@ section.sec-1 .sec-1-inner div p {
 .shop .shop-inner .purchase-now .purchase-now-inner .purchase-now-product {
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   height: 45rem;
   width: 45rem;
 }
