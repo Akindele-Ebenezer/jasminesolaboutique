@@ -61,6 +61,7 @@ header nav:first-child div {
 }
 header nav:first-child div:first-child p {
   padding-inline: 1rem;
+  transform: translateY(0.2rem);
 }
 header nav:first-child div:first-child p svg {
   background: #fff;
@@ -148,6 +149,7 @@ main {
   justify-content: center;
 }
 main .main {
+  overflow: hidden;
   width: 85vw;
 }
 

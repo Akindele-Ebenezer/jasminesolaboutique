@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Bag;
 use App\Models\Perfume;
 
 class IndexController extends Controller

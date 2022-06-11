@@ -19,6 +19,7 @@ header {
                 &:first-child {
                     p {
                         padding-inline: 1rem;
+                        transform: translateY(0.2rem);
 
                         svg  {
                             @include icons();
