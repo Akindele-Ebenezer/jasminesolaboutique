@@ -14,10 +14,16 @@ class PerfumeController extends Controller
      */
     public function index()
     { 
+        $page_title = 'perfumes';
         $Products = Perfume::all(); 
-        $ImageFolder = 'perfumes';
+        $ImageFolder = $page_title;
+        $ProductName = ucfirst($ImageFolder);
         $ProductNameForRoute = ucfirst($ImageFolder);
+
         return view('Perfumes', [
+            'page_title' => ucwords($page_title),
+            'ImageFolder' => $ImageFolder,
+            'ProductName' => $ProductName,
             'Products' => $Products,
             'MostPopular' => $Products, 
             'ProductNameForRoute' => $ProductNameForRoute, 

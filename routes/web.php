@@ -8,7 +8,7 @@ use App\Http\Controllers\BagController;
  
 Route::get('/', [IndexController::class, 'index']);
 
-Route::get('/Shop', [HomeController::class, 'index']);
+// Route::get('/Shop', [HomeController::class, 'index']);
 
 Route::get('/PurchaseNow/Perfumes/{ProductId}', [PerfumeController::class, 'show']); 
 Route::get('/Perfumes', [PerfumeController::class, 'index'])->name('Perfumes');

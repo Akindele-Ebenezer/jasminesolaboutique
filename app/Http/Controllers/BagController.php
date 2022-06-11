@@ -14,12 +14,18 @@ class BagController extends Controller
      */
     public function index()
     {
+        $page_title = 'bags';
         $Products = Bag::all(); 
-        $ImageFolder = 'perfumes';
+        $ImageFolder = $page_title;
+        $ProductName = ucfirst($ImageFolder);
         $ProductNameForRoute = ucfirst($ImageFolder);
+        
         return view('Bags', [
+            'page_title' => ucwords($page_title),
+            'ImageFolder' => $ImageFolder,
             'Products' => $Products,
             'MostPopular' => $Products, 
+            'ProductName' => $ProductName,
             'ProductNameForRoute' => $ProductNameForRoute, 
         ]);
     }
