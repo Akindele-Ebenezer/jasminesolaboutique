@@ -46,6 +46,7 @@ header {
   font-size: small;
 }
 header nav {
+  align-items: center;
   display: flex;
   justify-content: space-around;
 }
@@ -87,6 +88,9 @@ header nav:last-child {
   background-color: #eee;
   padding-block: 1rem;
 }
+header nav:last-child div h1 {
+  font-size: 2rem;
+}
 header nav:last-child ul {
   display: flex;
 }
@@ -114,7 +118,7 @@ header nav:last-child ul li a:hover {
   padding: 1rem;
 }
 .header-sm-screen div h1 {
-  font-size: unset;
+  font-size: 2rem;
 }
 .header-sm-screen div svg {
   background: #fff;
@@ -156,6 +160,7 @@ main .main {
 .new-products,
 .from-shop {
   display: flex;
+  margin-inline: 2rem;
   overflow: scroll;
   padding-block: 3rem;
   text-align: center;
@@ -624,6 +629,9 @@ section.sec-1 .sec-1-inner div p {
   .shop .shop-inner .purchase-now .purchase-now-inner:last-child {
     margin-left: unset;
     width: 90vw;
+  }
+  .shop .shop-inner .purchase-now .purchase-now-inner h1 {
+    text-align: center;
   }
   .shop .shop-inner .purchase-now .purchase-now-inner .purchase-now-product {
     height: 25rem;
