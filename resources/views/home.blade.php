@@ -22,8 +22,32 @@
 
     <div class="new-products-title">
         <h1>AVAILABLE PRODUCTS</h1>
+        <h2>{{$ProductNameForRoute_2}}</h2>
     </div>
     <div class="new-products">
+        @foreach($Bags as $Bag)
+            <form action="/PurchaseNow/{{ $ProductNameForRoute_2 }}/{{ $Bag->Id }}">
+                <div class="product">
+                    <div style="background-image: url('/images/bags/{{ $Bag->Image }}')"></div>
+                    <p>{{ $Bag->Name }}</p>
+                    <span>₦ {{ $Bag->Price }}</span>
+                    <br>
+                    <button>ORDER</button>
+                    <input type="hidden" name="ProductId" value="{{ $Bag->Id }}">
+                    <input type="hidden" name="ProductName" value="{{ $Bag->Name }}">
+                    <input type="hidden" name="ProductPrice" value="{{ $Bag->Price }}">
+                    <input type="hidden" name="ProductImage" value="{{ $Bag->Image }}">
+                    <input type="hidden" name="ProductDescription" value="{{ $Bag->Description }}">
+                    <input type="hidden" name="ProductDetail" value="{{ $Bag->ProductDetail }}">
+                </div>
+            </form>
+        @endforeach
+    </div>
+
+    <div class="from-shop-title"> 
+        <h2>{{$ProductNameForRoute}}</h2>
+    </div>
+    <div class="from-shop">
         @foreach($Perfumes as $Perfume)
             <form action="/PurchaseNow/{{ $ProductNameForRoute }}/{{ $Perfume->Id }}">
                 <div class="product">
@@ -40,7 +64,7 @@
                     <input type="hidden" name="ProductDetail" value="{{ $Perfume->ProductDetail }}">
                 </div>
             </form>
-        @endforeach
+        @endforeach 
     </div>
 
     <section class="sec-2">
@@ -89,6 +113,30 @@
             </div>
         </a>
     </section>
+    
+    <div class="from-shop-title">
+        <h1>FROM SHOP</h1>
+        <h2>{{$ProductNameForRoute_3}}</h2>
+    </div>
+    <div class="from-shop">
+        @foreach($Singlets as $Singlet)
+            <form action="/PurchaseNow/{{ $ProductNameForRoute_3 }}/{{ $Singlet->Id }}">
+                <div class="product">
+                    <div style="background-image: url('/images/singlets/{{ $Singlet->Image }}')"></div>
+                    <p>{{ $Singlet->Name }}</p>
+                    <span>₦ {{ $Singlet->Price }}</span>
+                    <br>
+                    <button>ORDER</button>
+                    <input type="hidden" name="ProductId" value="{{ $Singlet->Id }}">
+                    <input type="hidden" name="ProductName" value="{{ $Singlet->Name }}">
+                    <input type="hidden" name="ProductPrice" value="{{ $Singlet->Price }}">
+                    <input type="hidden" name="ProductImage" value="{{ $Singlet->Image }}">
+                    <input type="hidden" name="ProductDescription" value="{{ $Singlet->Description }}">
+                    <input type="hidden" name="ProductDetail" value="{{ $Singlet->ProductDetail }}">
+                </div>
+            </form>
+        @endforeach 
+    </div>
 
     <section class="sec-3">
         <div class="sec-3-inner">
@@ -107,28 +155,29 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, vero.</p>
         </div>
     </section>
-    
-    <div class="from-shop-title">
-        <h1>FROM SHOP</h1>
+
+    <div class="new-products-title">
+        <h1>MORE PRODUCTS FROM OUR STORE</h1>
+        <h2>{{$ProductNameForRoute_4}}</h2>
     </div>
-    <div class="from-shop">
-        @foreach($Perfumes as $Perfume)
-            <form action="/PurchaseNow/{{ $ProductNameForRoute }}/{{ $Perfume->Id }}">
+    <div class="new-products">
+        @foreach($Boxers as $Boxer)
+            <form action="/PurchaseNow/{{ $ProductNameForRoute_4 }}/{{ $Boxer->Id }}">
                 <div class="product">
-                    <div style="background-image: url('/images/perfumes/{{ $Perfume->Image }}')"></div>
-                    <p>{{ $Perfume->Name }}</p>
-                    <span>₦ {{ $Perfume->Price }}</span>
+                    <div style="background-image: url('/images/boxers/{{ $Boxer->Image }}')"></div>
+                    <p>{{ $Boxer->Name }}</p>
+                    <span>₦ {{ $Boxer->Price }}</span>
                     <br>
                     <button>ORDER</button>
-                    <input type="hidden" name="ProductId" value="{{ $Perfume->Id }}">
-                    <input type="hidden" name="ProductName" value="{{ $Perfume->Name }}">
-                    <input type="hidden" name="ProductPrice" value="{{ $Perfume->Price }}">
-                    <input type="hidden" name="ProductImage" value="{{ $Perfume->Image }}">
-                    <input type="hidden" name="ProductDescription" value="{{ $Perfume->Description }}">
-                    <input type="hidden" name="ProductDetail" value="{{ $Perfume->ProductDetail }}">
+                    <input type="hidden" name="ProductId" value="{{ $Boxer->Id }}">
+                    <input type="hidden" name="ProductName" value="{{ $Boxer->Name }}">
+                    <input type="hidden" name="ProductPrice" value="{{ $Boxer->Price }}">
+                    <input type="hidden" name="ProductImage" value="{{ $Boxer->Image }}">
+                    <input type="hidden" name="ProductDescription" value="{{ $Boxer->Description }}">
+                    <input type="hidden" name="ProductDetail" value="{{ $Boxer->ProductDetail }}">
                 </div>
             </form>
-        @endforeach 
+        @endforeach
     </div>
 
     <section class="sec-4">

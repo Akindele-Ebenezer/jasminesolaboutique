@@ -178,6 +178,12 @@ main .main {
   margin-block: 2rem;
   padding-left: 1rem;
 }
+.new-products-title h2, .new-products-from-shop h2,
+.from-shop-title h2,
+.from-shop-from-shop h2 {
+  color: #13356c;
+  margin-block: 1rem;
+}
 .new-products .product,
 .from-shop .product {
   border-left: unset;
