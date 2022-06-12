@@ -42,6 +42,7 @@ a {
 
 header {
   position: fixed;
+  z-index: 100;
   width: 100vw;
   font-size: small;
 }
@@ -109,6 +110,7 @@ header nav:last-child ul li a:hover {
 
 .header-sm-screen {
   position: fixed;
+  z-index: 100;
   width: 100vw;
   align-items: center;
   background: #fff;
@@ -170,6 +172,7 @@ main .main {
   border-bottom-style: dashed;
   border-bottom-width: 2px;
   border-color: #13356c;
+  margin-inline: 2rem;
 }
 .new-products-title h1, .new-products-from-shop h1,
 .from-shop-title h1,
@@ -183,6 +186,11 @@ main .main {
 .from-shop-from-shop h2 {
   color: #13356c;
   margin: 1rem;
+}
+.new-products-title#ShopNow, .new-products-from-shop#ShopNow,
+.from-shop-title#ShopNow,
+.from-shop-from-shop#ShopNow {
+  padding-top: 6rem;
 }
 .new-products .product,
 .from-shop .product {
@@ -220,6 +228,7 @@ main .main {
 }
 
 section.sec-1 {
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -282,9 +291,11 @@ section.sec-1 .sec-1-inner div span {
 }
 section.sec-1 .sec-1-inner div span.we-sell span:first-child {
   font-size: 1.5rem;
+  font-style: italic;
 }
 section.sec-1 .sec-1-inner div span#main {
   color: #ff7676 !important;
+  font-size: 3rem;
 }
 section.sec-2 {
   background: #f5f7f9;
@@ -631,6 +642,7 @@ section.sec-1 .sec-1-inner div p {
 @media (max-width: 894px) {
   .shop .shop-inner .purchase-now {
     flex-wrap: wrap;
+    transform: translateY(-3rem);
   }
   .shop .shop-inner .purchase-now .purchase-now-inner:last-child {
     margin-left: unset;

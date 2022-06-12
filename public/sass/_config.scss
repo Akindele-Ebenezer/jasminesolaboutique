@@ -45,6 +45,7 @@ $color-4: #ff6c6c;
 
 @mixin fixed-header {
     position: fixed;
+    z-index: 100;
     width: 100vw;
 }
 

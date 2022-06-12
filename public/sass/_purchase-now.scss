@@ -79,6 +79,7 @@
         .shop-inner {
             .purchase-now {
                 flex-wrap: wrap;
+                transform: translateY(-3rem);
                 
                 .purchase-now-inner {
                     &:last-child {

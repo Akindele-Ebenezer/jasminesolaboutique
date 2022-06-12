@@ -8,7 +8,7 @@
                 <h1>ONLINE STORE</h1> 
                 <h2>JASMINE <span>SOLA</span></h2>
                 <span>BOUTIQUE</span>
-                <center><button>SHOP NOW</button><button>CONTACT</button></center>
+                <center><a href="#ShopNow"><button>SHOP NOW</button></a><a href="#Contact"><button>CONTACT</button></a></center>
                 <h3>SAVE UP TO 50%</h3>
                 <p>IF YOU BUY UP TO THREE PRODUCTS</p>
                 <span class="we-sell">
@@ -20,7 +20,7 @@
         </div>
     </section>
 
-    <div class="new-products-title">
+    <div class="new-products-title" id="ShopNow">
         <h1>AVAILABLE PRODUCTS</h1>
         <h2>{{$ProductNameForRoute_2}}</h2>
     </div>
@@ -180,7 +180,7 @@
         @endforeach
     </div>
 
-    <section class="sec-4">
+    <section class="sec-4" id="Contact">
         <div class="sec-4-inner">
             <div class="contact">
                 <h1>GET IN TOUCH</h1>

@@ -22,6 +22,7 @@ main {
     &-title,
     &-from-shop {
         @include dashed-border();
+        margin-inline: 2rem;
 
         h1 {
             font-size: large;
@@ -33,6 +34,10 @@ main {
             color: $color-1;
             margin: 1rem;
         }
+    
+        &#ShopNow {
+            padding-top: 6rem;
+        }
     }
 
     .product {
@@ -42,6 +47,7 @@ main {
 
 section { 
     &.sec-1 { 
+        background-attachment: fixed;
         background-position: center; 
         background-repeat: no-repeat;
         background-size: cover;
@@ -108,12 +114,15 @@ section {
                         span {
                             &:first-child {
                                 font-size: 1.5rem;
+                                font-style: italic;
+                                
                             }
                         }
                     }
                     
                     &#main {
                         color: lighten($color-4, 2) !important;
+                        font-size: 3rem;
                     }
                 }
             }
