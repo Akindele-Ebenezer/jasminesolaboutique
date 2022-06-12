@@ -112,7 +112,6 @@ header nav:last-child ul li a:hover {
   width: 100vw;
   align-items: center;
   background: #fff;
-  box-shadow: 1px 2px 19px #222;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -130,9 +129,9 @@ header nav:last-child ul li a:hover {
   width: 1rem;
   transform: translateY(0.5rem);
   border-radius: unset;
-  height: 2rem;
+  height: 3rem;
   padding: unset;
-  width: 2rem;
+  width: 3rem;
 }
 .header-sm-screen div:last-child {
   transform: translateX(-1.5rem);

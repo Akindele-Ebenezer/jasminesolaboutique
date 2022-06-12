@@ -73,8 +73,7 @@ header {
 .header-sm-screen {
     @include fixed-header();
     align-items: center;
-    background: #fff;
-    box-shadow: 1px 2px 19px #222;
+    background: #fff; 
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -87,9 +86,9 @@ header {
         svg {
             @include icons();
             border-radius: unset;
-            height: 2rem;
+            height: 3rem;
             padding: unset;
-            width: 2rem;
+            width: 3rem;
         }
 
         &:last-child {
