@@ -182,7 +182,7 @@ main .main {
 .from-shop-title h2,
 .from-shop-from-shop h2 {
   color: #13356c;
-  margin-block: 1rem;
+  margin: 1rem;
 }
 .new-products .product,
 .from-shop .product {
