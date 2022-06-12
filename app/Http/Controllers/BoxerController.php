@@ -19,8 +19,10 @@ class BoxerController extends Controller
         $ImageFolder = $page_title;
         $ProductName = ucfirst($ImageFolder);
         $ProductNameForRoute = ucfirst($ImageFolder);
+        $PageTitleBg = $page_title . '-bg.jpg';
         
         return view('Boxers', [
+            'PageTitleBg' => $PageTitleBg,
             'page_title' => ucwords($page_title),
             'ImageFolder' => $ImageFolder,
             'Products' => $Products,

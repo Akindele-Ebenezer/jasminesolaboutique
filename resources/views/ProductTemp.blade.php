@@ -1,7 +1,7 @@
 @extends('layout.shop')
 
 @section('page_title')
-    <div class="title" style="background-image: url('{{ asset('images/bgg.jpg') }}')">
+    <div class="title" style="background-image: url('/images/{{ $PageTitleBg }}')">
         <div class="title-inner">
             <div>
                 <h1>{{ $page_title }}</h1>

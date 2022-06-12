@@ -84,18 +84,6 @@
                 <p>BAGS</p>
             </div>
         </a>
-        <div class="sec-2-inner">
-            <div>
-                <img src="{{ asset('images/high-heels.png') }}">
-            </div>
-            <p>SHOES</p>
-        </div>
-        <div class="sec-2-inner">
-            <div>
-                <img src="{{ asset('images/hair.png') }}">
-            </div>
-            <p>HAIR</p>
-        </div>
         <a href="{{ route('Singlets') }}">
             <div class="sec-2-inner">
                 <div>
@@ -112,6 +100,18 @@
                 <p>BOXERS</p>
             </div>
         </a>
+        <div class="sec-2-inner">
+            <div>
+                <img src="{{ asset('images/high-heels.png') }}">
+            </div>
+            <p>SHOES</p>
+        </div>
+        <div class="sec-2-inner">
+            <div>
+                <img src="{{ asset('images/hair.png') }}">
+            </div>
+            <p>HAIR</p>
+        </div>
     </section>
     
     <div class="from-shop-title">
