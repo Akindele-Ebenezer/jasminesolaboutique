@@ -5,7 +5,8 @@
     $ProductImage = $_GET['ProductImage'];
     $ProductPrice = $_GET['ProductPrice'];
     $ProductDetail = $_GET['ProductDetail'];
-    $ProductDescription = $_GET['ProductDescription'];  
+    $ProductDescription = $_GET['ProductDescription']; 
+    $page_title = $ProductName; 
 
 @endphp
 

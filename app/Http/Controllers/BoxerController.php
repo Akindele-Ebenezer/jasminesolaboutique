@@ -59,15 +59,11 @@ class BoxerController extends Controller
      */
     public function show($ProductId)
     {
-        $BoxerDetails = Boxer::find($ProductId);
         $Products = Boxer::all(); 
-        $page_title = $BoxerDetails->Name;
         $ImageFolder = 'boxers';  
         $ProductNameForRoute = ucfirst($ImageFolder);
          
         return view('PurchaseNow', [
-            'page_title' => $page_title,
-            'BoxerDetails' => $BoxerDetails, 
             'RelatedProducts' => $Products,  
             'MostPopular' => $Products, 
             'Products' => $Products, 

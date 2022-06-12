@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Bag;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class BagController extends Controller
 {
@@ -58,16 +59,12 @@ class BagController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($ProductId)
-    {
-        $BagDetails = Bag::find($ProductId);
-        $Products = Bag::all(); 
-        $page_title = $BagDetails->Name;
+    { 
+        $Products = Bag::all();  
         $ImageFolder = 'bags';  
         $ProductNameForRoute = ucfirst($ImageFolder);
-         
-        return view('PurchaseNow', [
-            'page_title' => $page_title,
-            'BagDetails' => $BagDetails, 
+        
+        return view('PurchaseNow', [ 
             'RelatedProducts' => $Products,  
             'MostPopular' => $Products, 
             'Products' => $Products, 

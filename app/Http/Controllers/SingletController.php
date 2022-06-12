@@ -59,15 +59,11 @@ class SingletController extends Controller
      */
     public function show($ProductId)
     {
-        $SingletDetails = Singlet::find($ProductId);
         $Products = Singlet::all(); 
-        $page_title = $SingletDetails->Name;
         $ImageFolder = 'singlets';  
         $ProductNameForRoute = ucfirst($ImageFolder);
          
         return view('PurchaseNow', [
-            'page_title' => $page_title,
-            'SingletDetails' => $SingletDetails, 
             'RelatedProducts' => $Products,  
             'MostPopular' => $Products, 
             'Products' => $Products, 
