@@ -22,6 +22,7 @@
         <div class="purchase-now-inner">
             <h1>{{ $ProductName }}</h1>
             <span>₦ {{ $ProductPrice }}</span>
+            <h1 class="sale">SALE</h1>
             <br>
             <button>PURCHASE NOW</button>
             <br>

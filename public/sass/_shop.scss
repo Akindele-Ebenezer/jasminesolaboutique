@@ -136,6 +136,9 @@
     .shop {
         .shop-inner {
             &:first-child {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
                 order: 2;
                 width: 90vw;
             }

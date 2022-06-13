@@ -109,6 +109,25 @@
     </footer>
     <p>Copyright 2022 &copy;JASMINESolaBoutique. All rights reserved.</p>
     @yield('scripts')
+    <script>
+
+        let Form = document.querySelectorAll("form"); 
+        
+        for (let i = 0; i < Form.length; i++) {
+            Form[i].addEventListener("click", () => {
+                Form[i].submit();
+            });  
+
+            Form[i].addEventListener("mouseover", () => {     
+                Form[i].classList.toggle("Form-Hover-Effect");      
+            });  
+            
+            Form[i].addEventListener("mouseout", () => {     
+                Form[i].classList.remove("Form-Hover-Effect");      
+            });  
+        } 
+
+    </script>
 
 </body>
 </html>

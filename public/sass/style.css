@@ -36,6 +36,31 @@ a {
   color: #111;
 }
 
+.Form-Hover-Effect {
+  cursor: pointer;
+}
+.Form-Hover-Effect div[style] {
+  opacity: 0.8;
+}
+.Form-Hover-Effect p {
+  color: #13356c;
+}
+.Form-Hover-Effect span {
+  color: #ff6c6c;
+}
+.Form-Hover-Effect .product {
+  cursor: pointer;
+}
+.Form-Hover-Effect .product div[style] {
+  opacity: 0.8;
+}
+.Form-Hover-Effect .product p {
+  color: #13356c;
+}
+.Form-Hover-Effect .product span {
+  color: #ff6c6c;
+}
+
 .heading {
   font-family: "Ubuntu", sans-serif;
 }
@@ -199,8 +224,8 @@ main .main {
 .new-products .product,
 .from-shop .product {
   border-left: unset;
+  position: relative;
   margin-inline: 0.5rem;
-  text-align: center;
   width: 15rem;
 }
 .new-products .product button,
@@ -249,8 +274,9 @@ main .main {
   letter-spacing: 0.1rem;
   padding: 0.1rem 0.3rem;
   text-align: left;
-  transform: translateY(1.25rem);
   width: max-content;
+  position: absolute;
+  z-index: 10;
 }
 .new-products .product p,
 .new-products .product button,
@@ -526,8 +552,8 @@ section.sec-1 .sec-1-inner div p {
 }
 .shop .shop-inner .product {
   border-left: unset;
+  position: relative;
   margin-inline: 0.5rem;
-  text-align: center;
   width: 15rem;
   margin: 2rem 0.5rem;
 }
@@ -571,8 +597,9 @@ section.sec-1 .sec-1-inner div p {
   letter-spacing: 0.1rem;
   padding: 0.1rem 0.3rem;
   text-align: left;
-  transform: translateY(1.25rem);
   width: max-content;
+  position: absolute;
+  z-index: 10;
 }
 .shop .shop-inner .product p,
 .shop .shop-inner .product button {
@@ -648,6 +675,9 @@ section.sec-1 .sec-1-inner div p {
 
 @media (max-width: 1894px) {
   .shop .shop-inner:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     order: 2;
     width: 90vw;
   }
@@ -683,8 +713,9 @@ section.sec-1 .sec-1-inner div p {
   letter-spacing: 0.1rem;
   padding: 0.1rem 0.3rem;
   text-align: left;
-  transform: translateY(1.25rem);
   width: max-content;
+  position: absolute;
+  z-index: 10;
 }
 .shop .shop-inner .purchase-now {
   border: 1px solid #eee;
@@ -714,6 +745,18 @@ section.sec-1 .sec-1-inner div p {
   font-size: 2rem;
   margin-block: 1rem;
   padding: 1rem 0;
+}
+.shop .shop-inner .purchase-now .purchase-now-inner h1.sale {
+  background: #ff6c6c;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: smaller;
+  letter-spacing: 0.1rem;
+  padding: 0.1rem 0.3rem;
+  text-align: left;
+  width: max-content;
+  position: absolute;
+  z-index: 10;
 }
 .shop .shop-inner .purchase-now .purchase-now-inner h1,
 .shop .shop-inner .purchase-now .purchase-now-inner h2,
