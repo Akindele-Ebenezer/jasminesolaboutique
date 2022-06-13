@@ -12,6 +12,8 @@ header {
             color: #fff;
             letter-spacing: .01rem;
             padding-bottom: 1rem;
+            position: relative;
+            z-index: 10;
             
             div {
                 align-items: center;
@@ -39,12 +41,16 @@ header {
         }
 
         &:last-child {
-            background-color: $color-2;  
+            background-color: #fff;  
             padding-block: 1rem;
 
             div {
                 h1 {
-                    font-size: 2rem;
+                    img {
+                        position: absolute;
+                        top: -1.4rem;
+                        width: 14rem;
+                    }
                 }
             }
 
@@ -80,7 +86,11 @@ header {
 
     div {
         h1 {
-            font-size: 2rem;
+            img {
+                position: absolute;
+                width: 10rem;
+                top: 0rem;
+            }
         }
 
         svg {

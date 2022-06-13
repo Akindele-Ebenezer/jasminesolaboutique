@@ -85,6 +85,8 @@ header nav:first-child {
   color: #fff;
   letter-spacing: 0.01rem;
   padding-bottom: 1rem;
+  position: relative;
+  z-index: 10;
 }
 header nav:first-child div {
   align-items: center;
@@ -115,11 +117,13 @@ header nav:first-child div:last-child svg {
   transform: translateY(0.5rem);
 }
 header nav:last-child {
-  background-color: #eee;
+  background-color: #fff;
   padding-block: 1rem;
 }
-header nav:last-child div h1 {
-  font-size: 2rem;
+header nav:last-child div h1 img {
+  position: absolute;
+  top: -1.4rem;
+  width: 14rem;
 }
 header nav:last-child ul {
   display: flex;
@@ -147,8 +151,10 @@ header nav:last-child ul li a:hover {
   justify-content: space-between;
   padding: 1rem;
 }
-.header-sm-screen div h1 {
-  font-size: 2rem;
+.header-sm-screen div h1 img {
+  position: absolute;
+  width: 10rem;
+  top: 0rem;
 }
 .header-sm-screen div svg {
   background: #fff;
