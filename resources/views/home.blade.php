@@ -28,6 +28,7 @@
         @foreach($Bags as $Bag)
             <form action="/PurchaseNow/{{ $ProductNameForRoute_2 }}/{{ $Bag->Id }}">
                 <div class="product">
+                    <p class="description">{{ $Bag->Description }}</p>
                     <h1>SALE</h1>
                     <div style="background-image: url('/images/bags/{{ $Bag->Image }}')"></div>
                     <p>{{ $Bag->Name }}</p>
@@ -52,6 +53,7 @@
         @foreach($Perfumes as $Perfume)
             <form action="/PurchaseNow/{{ $ProductNameForRoute }}/{{ $Perfume->Id }}">
                 <div class="product">
+                    <p class="description">{{ $Perfume->Description }}</p>
                     <h1>SALE</h1>
                     <div style="background-image: url('/images/perfumes/{{ $Perfume->Image }}')"></div>
                     <p>{{ $Perfume->Name }}</p>
@@ -124,6 +126,7 @@
         @foreach($Singlets as $Singlet)
             <form action="/PurchaseNow/{{ $ProductNameForRoute_3 }}/{{ $Singlet->Id }}">
                 <div class="product">
+                    <p class="description">{{ $Singlet->Description }}</p>
                     <h1>SALE</h1>
                     <div style="background-image: url('/images/singlets/{{ $Singlet->Image }}')"></div>
                     <p>{{ $Singlet->Name }}</p>
@@ -167,6 +170,7 @@
         @foreach($Boxers as $Boxer)
             <form action="/PurchaseNow/{{ $ProductNameForRoute_4 }}/{{ $Boxer->Id }}">
                 <div class="product">
+                    <p class="description">{{ $Boxer->Description }}</p>
                     <h1>SALE</h1>
                     <div style="background-image: url('/images/boxers/{{ $Boxer->Image }}')"></div>
                     <p>{{ $Boxer->Name }}</p>

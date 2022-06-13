@@ -284,6 +284,14 @@ main .main {
 .from-shop .product button {
   margin-block: 1rem;
 }
+.new-products .product p.description,
+.new-products .product button.description,
+.from-shop .product p.description,
+.from-shop .product button.description {
+  color: #aaa;
+  text-align: right;
+  text-transform: uppercase;
+}
 .new-products .product span,
 .from-shop .product span {
   border-top: 2px solid #13356c;
@@ -605,6 +613,12 @@ section.sec-1 .sec-1-inner div p {
 .shop .shop-inner .product button {
   margin-block: 1rem;
 }
+.shop .shop-inner .product p.description,
+.shop .shop-inner .product button.description {
+  color: #aaa;
+  text-align: right;
+  text-transform: uppercase;
+}
 .shop .shop-inner .product span {
   border-top: 2px solid #13356c;
   font-size: 1.5rem;
@@ -704,6 +718,11 @@ section.sec-1 .sec-1-inner div p {
     height: 9rem !important;
     width: 9rem !important;
   }
+}
+.shop .shop-inner .most-popular .description {
+  color: #aaa;
+  text-align: right;
+  text-transform: uppercase;
 }
 .shop .shop-inner .most-popular h1.sale {
   background: #ff6c6c;

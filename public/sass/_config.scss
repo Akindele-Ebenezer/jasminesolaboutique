@@ -28,6 +28,12 @@ $color-4: #ff6c6c;
     border-color: $color-1;
 }
 
+@mixin description {
+    color: #aaa;
+    text-align: right;
+    text-transform: uppercase;
+}
+
 @mixin fontSize {
     font-size: small;
 }
@@ -89,6 +95,10 @@ $color-4: #ff6c6c;
     p,
     button {
         margin-block: 1rem;
+
+        &.description {
+            @include description();
+        }
     }
 
     span {

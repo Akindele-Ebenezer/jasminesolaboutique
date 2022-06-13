@@ -15,6 +15,7 @@
     @foreach($Products as $Product)
         <form action="/PurchaseNow/{{ $ProductName }}/{{ $Product->Id }}">
             <div class="product">
+                <p class="description">{{ $Product->Description }}</p>
                 <h1>SALE</h1>
                 <div style="background-image: url('images/{{ $ImageFolder }}/{{ $Product->Image }}')"></div>
                 <p>{{ $Product->Name }}</p>
