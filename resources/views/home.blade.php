@@ -28,11 +28,12 @@
         @foreach($Bags as $Bag)
             <form action="/PurchaseNow/{{ $ProductNameForRoute_2 }}/{{ $Bag->Id }}">
                 <div class="product">
+                    <h1>SALE</h1>
                     <div style="background-image: url('/images/bags/{{ $Bag->Image }}')"></div>
                     <p>{{ $Bag->Name }}</p>
                     <span>₦ {{ $Bag->Price }}</span>
                     <br>
-                    <button>ORDER</button>
+                    <button>BUY NOW</button>
                     <input type="hidden" name="ProductId" value="{{ $Bag->Id }}">
                     <input type="hidden" name="ProductName" value="{{ $Bag->Name }}">
                     <input type="hidden" name="ProductPrice" value="{{ $Bag->Price }}">
@@ -51,11 +52,12 @@
         @foreach($Perfumes as $Perfume)
             <form action="/PurchaseNow/{{ $ProductNameForRoute }}/{{ $Perfume->Id }}">
                 <div class="product">
+                    <h1>SALE</h1>
                     <div style="background-image: url('/images/perfumes/{{ $Perfume->Image }}')"></div>
                     <p>{{ $Perfume->Name }}</p>
                     <span>₦ {{ $Perfume->Price }}</span>
                     <br>
-                    <button>ORDER</button>
+                    <button class="button-1">ORDER</button>
                     <input type="hidden" name="ProductId" value="{{ $Perfume->Id }}">
                     <input type="hidden" name="ProductName" value="{{ $Perfume->Name }}">
                     <input type="hidden" name="ProductPrice" value="{{ $Perfume->Price }}">
@@ -122,11 +124,12 @@
         @foreach($Singlets as $Singlet)
             <form action="/PurchaseNow/{{ $ProductNameForRoute_3 }}/{{ $Singlet->Id }}">
                 <div class="product">
+                    <h1>SALE</h1>
                     <div style="background-image: url('/images/singlets/{{ $Singlet->Image }}')"></div>
                     <p>{{ $Singlet->Name }}</p>
                     <span>₦ {{ $Singlet->Price }}</span>
                     <br>
-                    <button>ORDER</button>
+                    <button class="button-1">ORDER</button>
                     <input type="hidden" name="ProductId" value="{{ $Singlet->Id }}">
                     <input type="hidden" name="ProductName" value="{{ $Singlet->Name }}">
                     <input type="hidden" name="ProductPrice" value="{{ $Singlet->Price }}">
@@ -164,11 +167,12 @@
         @foreach($Boxers as $Boxer)
             <form action="/PurchaseNow/{{ $ProductNameForRoute_4 }}/{{ $Boxer->Id }}">
                 <div class="product">
+                    <h1>SALE</h1>
                     <div style="background-image: url('/images/boxers/{{ $Boxer->Image }}')"></div>
                     <p>{{ $Boxer->Name }}</p>
                     <span>₦ {{ $Boxer->Price }}</span>
                     <br>
-                    <button>ORDER</button>
+                    <button>BUY NOW</button>
                     <input type="hidden" name="ProductId" value="{{ $Boxer->Id }}">
                     <input type="hidden" name="ProductName" value="{{ $Boxer->Name }}">
                     <input type="hidden" name="ProductPrice" value="{{ $Boxer->Price }}">

@@ -207,10 +207,31 @@ main .main {
 .from-shop .product button {
   background: #13356c;
   border: 3px solid #13356c;
-  border-radius: 0.3rem;
   color: #fff;
   cursor: pointer;
   padding: 0.5rem 2rem;
+  transition: 0.5s;
+  background: #fff;
+  color: #13356c;
+}
+.new-products .product button:hover,
+.from-shop .product button:hover {
+  background: #13356c;
+  color: #fff;
+}
+.new-products .product .button-1,
+.from-shop .product .button-1 {
+  background: #13356c;
+  border: 3px solid #13356c;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  transition: 0.5s;
+}
+.new-products .product .button-1:hover,
+.from-shop .product .button-1:hover {
+  background: #fff;
+  color: #13356c;
 }
 .new-products .product div,
 .from-shop .product div {
@@ -218,6 +239,18 @@ main .main {
   background-size: contain;
   height: 15rem;
   width: 15rem;
+}
+.new-products .product h1,
+.from-shop .product h1 {
+  background: #ff6c6c;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: smaller;
+  letter-spacing: 0.1rem;
+  padding: 0.1rem 0.3rem;
+  text-align: left;
+  transform: translateY(1.25rem);
+  width: max-content;
 }
 .new-products .product p,
 .new-products .product button,
@@ -251,23 +284,34 @@ section.sec-1 .sec-1-inner div {
   text-align: center;
   width: 30rem;
 }
-section.sec-1 .sec-1-inner div button {
+section.sec-1 .sec-1-inner div a[href="#Contact"] button {
+  background: none;
+  border: 3px solid #fff;
   color: #fff;
+}
+section.sec-1 .sec-1-inner div a[href="#Contact"] button:hover {
+  background: #fff;
+  color: unset;
+}
+section.sec-1 .sec-1-inner div button {
+  background: #13356c;
+  border: 3px solid #13356c;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  transition: 0.5s;
+  background: #fff;
+  border: 3px solid #fff;
+  color: unset;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
   margin-right: 1rem;
   padding: 0.5rem 2rem;
   margin-block: 1rem;
 }
-section.sec-1 .sec-1-inner div button:first-of-type {
-  background: #13356c;
-  border: 3px solid #13356c;
-  border-radius: 0.3rem;
+section.sec-1 .sec-1-inner div button:hover {
+  background: unset;
   color: #fff;
-  cursor: pointer;
-  padding: 0.5rem 2rem;
-}
-section.sec-1 .sec-1-inner div button:last-of-type {
-  background: none;
-  border: 3px solid #fff;
 }
 section.sec-1 .sec-1-inner div h1 {
   color: #ddd;
@@ -306,6 +350,7 @@ section.sec-2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-block: 2rem;
   padding-block: 4rem;
 }
 section.sec-2 .sec-2-inner {
@@ -364,10 +409,10 @@ section.sec-4 .sec-4-inner .contact-info div img {
 section.sec-4 .sec-4-inner .contact .form form button {
   background: #13356c;
   border: 3px solid #13356c;
-  border-radius: 0.3rem;
   color: #fff;
   cursor: pointer;
   padding: 0.5rem 2rem;
+  transition: 0.5s;
 }
 section.sec-4 .sec-4-inner .contact .form form h1 {
   border-bottom-style: dashed;
@@ -425,6 +470,17 @@ section.sec-1 .sec-1-inner div p {
     font-size: 3rem;
   }
 }
+@media (max-width: 492px) {
+  .new-products .product,
+.from-shop .product {
+    width: 9rem;
+  }
+  .new-products .product div,
+.from-shop .product div {
+    height: 9rem;
+    width: 9rem;
+  }
+}
 .shop {
   align-items: flex-start;
   display: flex;
@@ -442,7 +498,7 @@ section.sec-1 .sec-1-inner div p {
   display: flex;
   flex-basis: 79rem;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin-inline: 2rem;
 }
 .shop .shop-inner h1 {
@@ -478,16 +534,45 @@ section.sec-1 .sec-1-inner div p {
 .shop .shop-inner .product button {
   background: #13356c;
   border: 3px solid #13356c;
-  border-radius: 0.3rem;
   color: #fff;
   cursor: pointer;
   padding: 0.5rem 2rem;
+  transition: 0.5s;
+  background: #fff;
+  color: #13356c;
+}
+.shop .shop-inner .product button:hover {
+  background: #13356c;
+  color: #fff;
+}
+.shop .shop-inner .product .button-1 {
+  background: #13356c;
+  border: 3px solid #13356c;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  transition: 0.5s;
+}
+.shop .shop-inner .product .button-1:hover {
+  background: #fff;
+  color: #13356c;
 }
 .shop .shop-inner .product div {
   background-position: center;
   background-size: contain;
   height: 15rem;
   width: 15rem;
+}
+.shop .shop-inner .product h1 {
+  background: #ff6c6c;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: smaller;
+  letter-spacing: 0.1rem;
+  padding: 0.1rem 0.3rem;
+  text-align: left;
+  transform: translateY(1.25rem);
+  width: max-content;
 }
 .shop .shop-inner .product p,
 .shop .shop-inner .product button {
@@ -515,10 +600,10 @@ section.sec-1 .sec-1-inner div p {
 .shop .shop-inner .most-popular .most-popular-inner div:last-child button {
   background: #13356c;
   border: 3px solid #13356c;
-  border-radius: 0.3rem;
   color: #fff;
   cursor: pointer;
   padding: 0.5rem 2rem;
+  transition: 0.5s;
   margin-top: 1rem;
 }
 .shop .shop-inner .most-popular .most-popular-inner div:last-child h2 {
@@ -581,6 +666,26 @@ section.sec-1 .sec-1-inner div p {
     margin-block: 0;
   }
 }
+@media (max-width: 492px) {
+  .shop-inner .product {
+    width: 9rem !important;
+  }
+  .shop-inner .product div {
+    height: 9rem !important;
+    width: 9rem !important;
+  }
+}
+.shop .shop-inner .most-popular h1.sale {
+  background: #ff6c6c;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: smaller;
+  letter-spacing: 0.1rem;
+  padding: 0.1rem 0.3rem;
+  text-align: left;
+  transform: translateY(1.25rem);
+  width: max-content;
+}
 .shop .shop-inner .purchase-now {
   border: 1px solid #eee;
   display: flex;
@@ -592,12 +697,17 @@ section.sec-1 .sec-1-inner div p {
 .shop .shop-inner .purchase-now .purchase-now-inner button {
   background: #13356c;
   border: 3px solid #13356c;
-  border-radius: 0.3rem;
   color: #fff;
   cursor: pointer;
   padding: 0.5rem 2rem;
+  transition: 0.5s;
+  color: #fff;
   margin-block: 3rem;
   width: 100%;
+}
+.shop .shop-inner .purchase-now .purchase-now-inner button:hover {
+  background: #fff;
+  color: #13356c;
 }
 .shop .shop-inner .purchase-now .purchase-now-inner h1 {
   background: unset;
@@ -633,7 +743,6 @@ section.sec-1 .sec-1-inner div p {
   margin-top: 4rem;
 }
 .shop .shop-inner .related-products-wrapper h1 {
-  font-size: 2rem;
   text-align: center;
 }
 .shop .shop-inner .related-products-wrapper .related-products {
@@ -646,7 +755,7 @@ section.sec-1 .sec-1-inner div p {
 @media (max-width: 894px) {
   .shop .shop-inner .purchase-now {
     flex-wrap: wrap;
-    transform: translateY(-3rem);
+    transform: translateY(-1.5rem);
   }
   .shop .shop-inner .purchase-now .purchase-now-inner:last-child {
     margin-left: unset;

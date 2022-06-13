@@ -22,6 +22,7 @@
                 <h1>MOST POPULAR</h1>
                 @foreach($MostPopular as $Product)
                 <form action="/PurchaseNow/{{ ucwords($ImageFolder) }}/{{ $Product->Id }}">
+                    <h1 class="sale">SALE</h1>
                     <div class="most-popular-inner">
                         <div style="background-image: url('/images/{{ $ImageFolder }}/{{ $Product->Image }}')"></div>
                         <div>

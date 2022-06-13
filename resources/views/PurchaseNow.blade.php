@@ -15,8 +15,7 @@
 @section('title', $page_title . ' | JASMINE Sola Boutique')
 @section('purchase_now')
     <div class="purchase-now">
-        <div class="purchase-now-inner">
-            <h1>{{ $ProductName }}</h1>
+        <div class="purchase-now-inner"> 
             <h2>{{ $ProductDescription }}</h2>
             <div class="purchase-now-product" style="background-image: url('/images/{{ $ImageFolder }}/{{ $ProductImage }}')"></div>
         </div>
@@ -44,6 +43,7 @@
             @foreach($RelatedProducts as $Product)
                 <form action="/PurchaseNow/{{ $ProductNameForRoute }}/{{ $ProductId }}">
                     <div class="product">
+                        <h1>SALE</h1>
                         <div style="background-image: url('/images/{{ $ImageFolder }}/{{ $Product->Image }}')"></div>
                         <p>{{ $Product->Name }}</p>
                         <span>₦ {{ $Product->Price }}</span>

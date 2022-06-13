@@ -1,5 +1,10 @@
 .shop { 
     .shop-inner {
+        .most-popular {
+            h1.sale {
+                @include sale();
+            }
+        }
         .purchase-now {
             // align-items: center;
             border: 1px solid #eee;
@@ -12,7 +17,14 @@
                 }
 
                 button {
-                    @include button();
+                    @include button(); 
+                    color: #fff;
+            
+                    &:hover {
+                        background: #fff;
+                        color: $color-1;
+                    }
+
                     margin-block: 3rem;
                     width: 100%;
                 }
@@ -59,8 +71,7 @@
         .related-products-wrapper {
             margin-top: 4rem;
 
-            h1 { 
-                font-size: 2rem;
+            h1 {  
                 text-align: center;
             }
             
@@ -79,7 +90,7 @@
         .shop-inner {
             .purchase-now {
                 flex-wrap: wrap;
-                transform: translateY(-3rem);
+                transform: translateY(-1.5rem);
                 
                 .purchase-now-inner {
                     &:last-child {

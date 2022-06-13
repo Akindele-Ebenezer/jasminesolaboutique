@@ -17,7 +17,7 @@
             display: flex;
             flex-basis: 79rem;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
             margin-inline: 2rem;
         }
 
@@ -157,6 +157,21 @@
 
         &-wrapper {
             margin-block: 0;
+        }
+    }
+}
+
+@media(max-width: 492px) {
+    .shop { 
+        &-inner {
+            .product {
+                width: 9rem !important;
+
+                div {
+                    height: 9rem !important;
+                    width: 9rem !important;
+                }
+            }
         }
     }
 }

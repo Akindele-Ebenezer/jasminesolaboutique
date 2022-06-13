@@ -15,6 +15,7 @@
     @foreach($Products as $Product)
         <form action="/PurchaseNow/{{ $ProductName }}/{{ $Product->Id }}">
             <div class="product">
+                <h1>SALE</h1>
                 <div style="background-image: url('images/{{ $ImageFolder }}/{{ $Product->Image }}')"></div>
                 <p>{{ $Product->Name }}</p>
                 <span>₦{{ $Product->Price }}</span>
@@ -25,7 +26,7 @@
                 <input type="hidden" name="ProductImage" value="{{ $Product->Image }}">
                 <input type="hidden" name="ProductDescription" value="{{ $Product->Description }}">
                 <input type="hidden" name="ProductDetail" value="{{ $Product->ProductDetail }}">
-                <button>ORDER</button>
+                <button>BUY NOW</button>
             </div>
         </form>
     @endforeach 

@@ -15,11 +15,11 @@ $color-4: #ff6c6c;
 
 @mixin button {
     background: $color-1;
-    border: 3px solid $color-1;
-    border-radius: .3rem;
+    border: 3px solid $color-1; 
     color: #fff;
     cursor: pointer;
     padding: 0.5rem 2rem;
+    transition: .5s;
 }
 
 @mixin dashed-border {
@@ -57,6 +57,22 @@ $color-4: #ff6c6c;
 
     button {
         @include button();
+        background: #fff;
+        color: $color-1;
+
+        &:hover {
+            background: $color-1;
+            color: #fff;
+        }
+    }
+
+    .button-1 {
+        @include button();
+        
+        &:hover {
+            background: #fff;
+            color: $color-1;
+        }
     }
 
     div {
@@ -66,6 +82,10 @@ $color-4: #ff6c6c;
         width: 15rem;
     }
 
+    h1 {
+        @include sale();
+    }
+    
     p,
     button {
         margin-block: 1rem;
@@ -75,6 +95,18 @@ $color-4: #ff6c6c;
         border-top: 2px solid $color-1;
         font-size: 1.5rem;
     }
+}
+
+@mixin sale {
+    background: $color-4;
+    border-radius: .2rem;
+    color: #fff;
+    font-size: smaller;
+    letter-spacing: .1rem;
+    padding: .1rem .3rem;
+    text-align: left;
+    transform: translateY(1.25rem);
+    width: max-content;
 }
 
 $headings: 1, 2, 3, 4;
