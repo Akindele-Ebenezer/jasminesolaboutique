@@ -8,7 +8,7 @@ use App\Http\Controllers\BagController;
 use App\Http\Controllers\SingletController;
 use App\Http\Controllers\BoxerController;
  
-Route::get('/', [IndexController::class, 'index']);
+Route::get('/', [IndexController::class, 'index'])->name('Home');
 
 // Route::get('/Shop', [HomeController::class, 'index']);
 
