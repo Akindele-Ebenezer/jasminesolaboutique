@@ -195,7 +195,7 @@
                 <br>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi maxime sunt dignissimos eos, incidunt delectus labore iusto ipsa, aliquid laborum ducimus, voluptatum commodi doloribus quibusdam inventore nesciunt corporis possimus accusantium esse.  <br><br> Delectus ullam iste dolores repellendus perspiciatis esse aliquid assumenda ea, odit officiis quasi blanditiis tenetur. Delectus numquam eligendi temporibus.</p>
                 <br>
-                <a target="blank" href="https://api.whatsapp.com/send? phone=08176141600">
+                <a target="blank" href="https://api.whatsapp.com/send?phone=2349092629101">
                     <div class="contact-info">
                         <div><img src="{{ asset('images/ws.png') }}">
                         </div>
