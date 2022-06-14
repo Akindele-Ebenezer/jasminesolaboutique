@@ -201,18 +201,20 @@
                         </div>
                         <div>
                             <h1>WHATSAPP</h1>
+                            <span>0909 262 9101</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="tel:08176141600">
+                    <div class="contact-info">
+                        <div><img src="{{ asset('images/phone.png') }}">
+                        </div>
+                        <div>
+                            <h1>CALL US AT</h1>
                             <span>0817 614 1600</span>
                         </div>
                     </div>
                 </a>
-                <div class="contact-info">
-                    <div><img src="{{ asset('images/phone.png') }}">
-                    </div>
-                    <div>
-                        <h1>CALL US AT</h1>
-                        <span>0909 262 9101</span>
-                    </div>
-                </div>
                 <a target="blank" href="https://www.instagram.com/jasminesolaboutique/">
                     <div class="contact-info">
                         <div><img src="{{ asset('images/instagram.png') }}">
