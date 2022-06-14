@@ -40,13 +40,13 @@ $color-4: #ff6c6c;
 
 @mixin icons {
     background: #fff;
-    border-radius: 50%;
+    border-radius: .2rem;
     fill: $color-1;
     height: 1rem;
     margin-inline: .2rem;
     padding: .3rem;
     width: 1rem;
-    transform: translateY(.5rem);
+    transform: translateY(.75rem);
 }
 
 @mixin fixed-header {

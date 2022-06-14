@@ -14,6 +14,12 @@ footer {
             align-items: center;
             display: flex;
             margin-block: 1rem;
+
+            div {
+                span {
+                    color: #ccc;
+                }
+            }
         }
         
         div {
@@ -28,8 +34,7 @@ footer {
             }
 
             svg {
-                @include icons();
-                border-radius: unset;
+                @include icons(); 
                 height: 2rem;
                 width: 2rem;
             }

@@ -92,29 +92,32 @@ header nav:first-child div {
   align-items: center;
   display: flex;
 }
+header nav:first-child div:first-child a {
+  color: #fff;
+}
 header nav:first-child div:first-child p {
   padding-inline: 1rem;
   transform: translateY(0.2rem);
 }
 header nav:first-child div:first-child p svg {
   background: #fff;
-  border-radius: 50%;
+  border-radius: 0.2rem;
   fill: #13356c;
   height: 1rem;
   margin-inline: 0.2rem;
   padding: 0.3rem;
   width: 1rem;
-  transform: translateY(0.5rem);
+  transform: translateY(0.75rem);
 }
 header nav:first-child div:last-child svg {
   background: #fff;
-  border-radius: 50%;
+  border-radius: 0.2rem;
   fill: #13356c;
   height: 1rem;
   margin-inline: 0.2rem;
   padding: 0.3rem;
   width: 1rem;
-  transform: translateY(0.5rem);
+  transform: translateY(0.75rem);
 }
 header nav:last-child {
   background-color: #fff;
@@ -158,13 +161,13 @@ header nav:last-child ul li a:hover {
 }
 .header-sm-screen div svg {
   background: #fff;
-  border-radius: 50%;
+  border-radius: 0.2rem;
   fill: #13356c;
   height: 1rem;
   margin-inline: 0.2rem;
   padding: 0.3rem;
   width: 1rem;
-  transform: translateY(0.5rem);
+  transform: translateY(0.75rem);
   border-radius: unset;
   height: 3rem;
   padding: unset;
@@ -425,6 +428,9 @@ section.sec-3 .sec-3-inner img {
 }
 section.sec-3 .sec-3-inner p {
   padding-block: 1rem;
+}
+section.sec-4 {
+  padding-block: 4.55rem;
 }
 section.sec-4 .sec-4-inner {
   display: flex;
@@ -860,6 +866,9 @@ footer .footer .contact-info {
   display: flex;
   margin-block: 1rem;
 }
+footer .footer .contact-info div span {
+  color: #ccc;
+}
 footer .footer div:first-of-type img {
   margin-right: 0.5rem;
 }
@@ -868,14 +877,13 @@ footer .footer div span {
 }
 footer .footer div svg {
   background: #fff;
-  border-radius: 50%;
+  border-radius: 0.2rem;
   fill: #13356c;
   height: 1rem;
   margin-inline: 0.2rem;
   padding: 0.3rem;
   width: 1rem;
-  transform: translateY(0.5rem);
-  border-radius: unset;
+  transform: translateY(0.75rem);
   height: 2rem;
   width: 2rem;
 }

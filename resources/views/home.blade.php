@@ -195,14 +195,16 @@
                 <br>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi maxime sunt dignissimos eos, incidunt delectus labore iusto ipsa, aliquid laborum ducimus, voluptatum commodi doloribus quibusdam inventore nesciunt corporis possimus accusantium esse.  <br><br> Delectus ullam iste dolores repellendus perspiciatis esse aliquid assumenda ea, odit officiis quasi blanditiis tenetur. Delectus numquam eligendi temporibus.</p>
                 <br>
-                <div class="contact-info">
-                    <div><img src="{{ asset('images/ws.png') }}">
+                <a target="blank" href="https://api.whatsapp.com/send? phone=08176141600">
+                    <div class="contact-info">
+                        <div><img src="{{ asset('images/ws.png') }}">
+                        </div>
+                        <div>
+                            <h1>WHATSAPP</h1>
+                            <span>0817 614 1600</span>
+                        </div>
                     </div>
-                    <div>
-                        <h1>WHATSAPP</h1>
-                        <span>0817 614 1600</span>
-                    </div>
-                </div>
+                </a>
                 <div class="contact-info">
                     <div><img src="{{ asset('images/phone.png') }}">
                     </div>
@@ -211,22 +213,26 @@
                         <span>0909 262 9101</span>
                     </div>
                 </div>
-                <div class="contact-info">
-                    <div><img src="{{ asset('images/instagram.png') }}">
+                <a target="blank" href="https://www.instagram.com/jasminesolaboutique/">
+                    <div class="contact-info">
+                        <div><img src="{{ asset('images/instagram.png') }}">
+                        </div>
+                        <div>
+                            <h1>INSTAGRAM</h1>
+                            <span>@jasminesolaboutique</span>
+                        </div>
                     </div>
-                    <div>
-                        <h1>INSTAGRAM</h1>
-                        <span>@jasminesolaboutique</span>
+                </a>
+                <a target="blank" href="https://www.facebook.com/Jasminesolaboutique">
+                    <div class="contact-info">
+                        <div><img src="{{ asset('images/facebook.png') }}">
+                        </div>
+                        <div>
+                            <h1>FACEBOOK</h1>
+                            <span>Jasmine Sola Boutique</span>
+                        </div>
                     </div>
-                </div>
-                <div class="contact-info">
-                    <div><img src="{{ asset('images/facebook.png') }}">
-                    </div>
-                    <div>
-                        <h1>FACEBOOK</h1>
-                        <span>Jasmine Sola Boutique</span>
-                    </div>
-                </div>
+                </a>
                 <div class="contact-info">
                     <div><img src="{{ asset('images/location-pin.png') }}">
                     </div>
@@ -235,14 +241,16 @@
                         <span>23/24 Dockyard, Apapa</span>
                     </div>
                 </div>
-                <div class="contact-info">
-                    <div><img src="{{ asset('images/mail.png') }}">
+                <a target="blank" href="mailto:jasminesolaboutique@gmail.com">
+                    <div class="contact-info">
+                        <div><img src="{{ asset('images/mail.png') }}">
+                        </div>
+                        <div>
+                            <h1>EMAIL US AT</h1>
+                            <span>info@jasminesolaboutique.com <br> <strong>OR</strong> <br> jasminesolaboutique@gmail.com</span>
+                        </div>
                     </div>
-                    <div>
-                        <h1>EMAIL US AT</h1>
-                        <span>info@jasminesolaboutique.com <br> <strong>OR</strong> <br> jasminesolaboutique@gmail.com</span>
-                    </div>
-                </div>
+                </a>
             </div>
             <div class="contact">
                 <div class="form">
