@@ -16,6 +16,7 @@ class PerfumeController extends Controller
     { 
         $page_title = 'perfumes';
         $Products = Perfume::inRandomOrder()->get(); 
+        $MostPopular = Perfume::inRandomOrder()->get();
         $ImageFolder = $page_title;
         $ProductName = ucfirst($ImageFolder);
         $ProductNameForRoute = ucfirst($ImageFolder);
@@ -27,7 +28,7 @@ class PerfumeController extends Controller
             'ImageFolder' => $ImageFolder,
             'ProductName' => $ProductName,
             'Products' => $Products,
-            'MostPopular' => $Products, 
+            'MostPopular' => $MostPopular, 
             'ProductNameForRoute' => $ProductNameForRoute, 
         ]);
     }
@@ -62,12 +63,12 @@ class PerfumeController extends Controller
     public function show($ProductId)
     { 
         $Products = Perfume::inRandomOrder()->get();
-        // $Products = Perfume::inRandomOrder()->get();
+        $MostPopular = Perfume::inRandomOrder()->get();
         $ImageFolder = 'perfumes';
         $ProductNameForRoute = ucfirst($ImageFolder);
  
         return view('PurchaseNow', [
-            'MostPopular' => $Products, 
+            'MostPopular' => $MostPopular, 
             'RelatedProducts' => $Products, 
             'Products' => $Products, 
             'ImageFolder' => $ImageFolder, 

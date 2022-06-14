@@ -16,6 +16,7 @@ class SingletController extends Controller
     {
         $page_title = 'singlets';
         $Products = Singlet::inRandomOrder()->get(); 
+        $MostPopular = Singlet::inRandomOrder()->get();
         $ImageFolder = $page_title;
         $ProductName = ucfirst($ImageFolder);
         $ProductNameForRoute = ucfirst($ImageFolder);
@@ -26,7 +27,7 @@ class SingletController extends Controller
             'page_title' => ucwords($page_title),
             'ImageFolder' => $ImageFolder,
             'Products' => $Products,
-            'MostPopular' => $Products, 
+            'MostPopular' => $MostPopular, 
             'ProductName' => $ProductName,
             'ProductNameForRoute' => $ProductNameForRoute, 
         ]);
@@ -62,12 +63,13 @@ class SingletController extends Controller
     public function show($ProductId)
     {
         $Products = Singlet::inRandomOrder()->get(); 
+        $MostPopular = Singlet::inRandomOrder()->get();
         $ImageFolder = 'singlets';  
         $ProductNameForRoute = ucfirst($ImageFolder);
          
         return view('PurchaseNow', [
             'RelatedProducts' => $Products,  
-            'MostPopular' => $Products, 
+            'MostPopular' => $MostPopular, 
             'Products' => $Products, 
             'ImageFolder' => $ImageFolder,  
             'ProductNameForRoute' => $ProductNameForRoute,

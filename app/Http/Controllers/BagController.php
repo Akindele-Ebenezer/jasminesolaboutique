@@ -17,6 +17,7 @@ class BagController extends Controller
     {
         $page_title = 'bags';
         $Products = Bag::inRandomOrder()->get(); 
+        $MostPopular = Bag::inRandomOrder()->get();
         $ImageFolder = $page_title;
         $ProductName = ucfirst($ImageFolder);
         $ProductNameForRoute = ucfirst($ImageFolder);
@@ -27,7 +28,7 @@ class BagController extends Controller
             'page_title' => ucwords($page_title),
             'ImageFolder' => $ImageFolder,
             'Products' => $Products,
-            'MostPopular' => $Products, 
+            'MostPopular' => $MostPopular, 
             'ProductName' => $ProductName,
             'ProductNameForRoute' => $ProductNameForRoute, 
         ]);
@@ -63,11 +64,12 @@ class BagController extends Controller
     public function show($ProductId)
     { 
         $Products = Bag::inRandomOrder()->get();  
+        $MostPopular = Bag::inRandomOrder()->get();
         $ImageFolder = 'bags';  
         $ProductNameForRoute = ucfirst($ImageFolder);
         
         return view('PurchaseNow', [ 
-            'RelatedProducts' => $Products,  
+            'RelatedProducts' => $MostPopular,  
             'MostPopular' => $Products, 
             'Products' => $Products, 
             'ImageFolder' => $ImageFolder,  

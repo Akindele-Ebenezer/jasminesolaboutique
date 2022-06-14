@@ -16,6 +16,7 @@ class BoxerController extends Controller
     {
         $page_title = 'boxers';
         $Products = Boxer::inRandomOrder()->get(); 
+        $MostPopular = Boxer::inRandomOrder()->get();
         $ImageFolder = $page_title;
         $ProductName = ucfirst($ImageFolder);
         $ProductNameForRoute = ucfirst($ImageFolder);
@@ -26,7 +27,7 @@ class BoxerController extends Controller
             'page_title' => ucwords($page_title),
             'ImageFolder' => $ImageFolder,
             'Products' => $Products,
-            'MostPopular' => $Products, 
+            'MostPopular' => $MostPopular, 
             'ProductName' => $ProductName,
             'ProductNameForRoute' => $ProductNameForRoute, 
         ]);
@@ -62,12 +63,13 @@ class BoxerController extends Controller
     public function show($ProductId)
     {
         $Products = Boxer::inRandomOrder()->get(); 
+        $MostPopular = Boxer::inRandomOrder()->get();
         $ImageFolder = 'boxers';  
         $ProductNameForRoute = ucfirst($ImageFolder);
          
         return view('PurchaseNow', [
             'RelatedProducts' => $Products,  
-            'MostPopular' => $Products, 
+            'MostPopular' => $MostPopular, 
             'Products' => $Products, 
             'ImageFolder' => $ImageFolder,  
             'ProductNameForRoute' => $ProductNameForRoute,
