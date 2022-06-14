@@ -433,6 +433,7 @@ section.sec-4 {
   padding-block: 4.55rem;
 }
 section.sec-4 .sec-4-inner {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -441,6 +442,9 @@ section.sec-4 .sec-4-inner .contact {
   margin-block: 2rem;
   padding-inline: 1rem;
   width: 50rem;
+}
+section.sec-4 .sec-4-inner .contact#BookNow {
+  padding-block: 6.5rem;
 }
 section.sec-4 .sec-4-inner .contact-info {
   display: flex;
@@ -466,6 +470,10 @@ section.sec-4 .sec-4-inner .contact .form form h1 {
   border-color: #13356c;
   font-size: 2rem;
 }
+section.sec-4 .sec-4-inner .contact .form form div {
+  display: flex;
+  flex-wrap: wrap;
+}
 section.sec-4 .sec-4-inner .contact .form form input,
 section.sec-4 .sec-4-inner .contact .form form textarea {
   margin-block: 1rem;
@@ -477,10 +485,13 @@ section.sec-4 .sec-4-inner .contact .form form input[placeholder],
 section.sec-4 .sec-4-inner .contact .form form textarea[placeholder] {
   color: #13356c;
   font-style: italic;
+  margin-right: 0.5rem;
+  width: 45%;
 }
 section.sec-4 .sec-4-inner .contact .form form textarea {
   height: 15rem;
   resize: none;
+  width: 94% !important;
 }
 
 @media (max-width: 1350px) {
@@ -497,6 +508,11 @@ section.sec-4 .sec-4-inner .contact .form form textarea {
   }
   section.sec-1 .sec-1-inner div h2 span {
     font-size: 6rem;
+  }
+}
+@media (max-width: 625px) {
+  section.sec-4 .sec-4-inner .contact .form form input[placeholder] {
+    width: 94%;
   }
 }
 @media (max-width: 470px) {

@@ -22,7 +22,7 @@
 
     <div class="new-products-title" id="ShopNow">
         <h1>AVAILABLE PRODUCTS</h1>
-        <h2>{{$ProductNameForRoute_2}}</h2>
+        <h2>{{ $ProductNameForRoute_2 }}</h2>
     </div>
     <div class="new-products">
         @foreach($Bags as $Bag)
@@ -254,14 +254,19 @@
                     </div>
                 </a>
             </div>
-            <div class="contact">
+            <div class="contact" id="BookNow">
                 <div class="form">
-                    <form action="">
+                    <form action="" id="BookNowForm">
                         <h1>BOOK NOW</h1>
-                        <input type="text" name="" placeholder="Enter Name"><br>
-                        <input type="email" name="" placeholder="Enter Email"><br>
-                        <input type="text" name="" placeholder="Name of Product"><br>
-                        <textarea name="" placeholder="Enter Your Message"></textarea><br>
+                        <div>
+                            <input type="text" name="" placeholder="Name of Product" value="Product : {{ $PurchasedProductName }}"><br>
+                            <input type="text" name="" placeholder="Amount" value=" Amount : ₦ {{ $PurchasedProductPrice }}"><br>
+                            <input type="text" name="" placeholder="Your Name"><br>
+                            <input type="email" name="" placeholder="Enter Email"><br>
+                            <input type="text" name="" placeholder="Phone No."><br>
+                            <input type="text" name="" placeholder="Location"><br>
+                            <textarea name="" placeholder="Describe how you want your item... (Optional)"></textarea><br>
+                        </div>
                         <button>SUBMIT</button>
                     </form>
                 </div>

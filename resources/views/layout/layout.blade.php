@@ -121,9 +121,15 @@
         
         for (let i = 0; i < Form.length; i++) {
             Form[i].addEventListener("click", () => {
-                Form[i].submit();
-            });  
 
+                if (Form[i].id === "BookNowForm") {
+                    Form[i].addEventListener("click", event => event.preventDefault());
+                } else {
+                    Form[i].submit();                    
+                }
+
+            });  
+             
             Form[i].addEventListener("mouseover", () => {     
                 Form[i].classList.toggle("Form-Hover-Effect");      
             });  
@@ -132,7 +138,11 @@
                 Form[i].classList.remove("Form-Hover-Effect");      
             });  
         } 
-
+        
+        let BookNowForm = document.getElementById("BookNowForm");
+                            
+        BookNowForm.style.cursor = "unset";                            
+         
     </script>
 
 </body>

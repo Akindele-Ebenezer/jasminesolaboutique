@@ -199,6 +199,7 @@ section {
         padding-block: 4.55rem;
 
         .sec-4-inner {
+            align-items: center;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -207,6 +208,10 @@ section {
                 margin-block: 2rem;
                 padding-inline: 1rem;
                 width: 50rem;
+
+                &#BookNow {
+                    padding-block: 6.5rem;
+                }
 
                 &-info {
                     display: flex;
@@ -234,6 +239,11 @@ section {
                             font-size: 2rem;
                         }
 
+                        div {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+
                         input,
                         textarea {
                             margin-block: 1rem;
@@ -244,12 +254,15 @@ section {
                             &[placeholder] {
                                 color: $color-1;
                                 font-style: italic;
+                                margin-right: .5rem;
+                                width: 45%;
                             }
                         }
 
                         textarea {
                             height: 15rem;
-                            resize: none;
+                            resize: none;   
+                            width: 94% !important;
                         }
                     }
                 }
@@ -286,6 +299,26 @@ section {
         }
     }
 } 
+
+@media (max-width: 625px) {
+    section {
+        &.sec-4 {
+            .sec-4-inner {
+                .contact {
+                    .form {
+                        form {
+                            input {
+                                &[placeholder] {
+                                    width: 94%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 470px) {
     section {

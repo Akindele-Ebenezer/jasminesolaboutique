@@ -24,7 +24,15 @@
             <span>₦ {{ $ProductPrice }}</span>
             <h1 class="sale">SALE</h1>
             <br>
-            <button>PURCHASE NOW</button>
+            <form action="/#BookNow" method="get">
+                <button>PURCHASE NOW</button>
+                <input type="hidden" name="ProductId" value="{{ $ProductId }}">
+                <input type="hidden" name="ProductName" value="{{ $ProductName }}">
+                <input type="hidden" name="ProductPrice" value="{{ $ProductPrice }}">
+                <input type="hidden" name="ProductImage" value="{{ $ProductImage }}">
+                <input type="hidden" name="ProductDescription" value="{{ $ProductDescription }}">
+                <input type="hidden" name="ProductDetail" value="{{ $ProductDetail }}">
+            </form>
             <br>
             <h2>DESCRIPTION</h2>
             <p>{{ $ProductDescription }}</p>
