@@ -15,7 +15,7 @@ class BoxerController extends Controller
     public function index()
     {
         $page_title = 'boxers';
-        $Products = Boxer::all(); 
+        $Products = Boxer::inRandomOrder()->get(); 
         $ImageFolder = $page_title;
         $ProductName = ucfirst($ImageFolder);
         $ProductNameForRoute = ucfirst($ImageFolder);
@@ -61,7 +61,7 @@ class BoxerController extends Controller
      */
     public function show($ProductId)
     {
-        $Products = Boxer::all(); 
+        $Products = Boxer::inRandomOrder()->get(); 
         $ImageFolder = 'boxers';  
         $ProductNameForRoute = ucfirst($ImageFolder);
          

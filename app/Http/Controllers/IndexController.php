@@ -14,10 +14,10 @@ class IndexController extends Controller
     {  
         $page_title = 'SHOP';
 
-        $Bags = Bag::all();
-        $Perfumes = Perfume::all(); 
-        $Singlets = Singlet::all(); 
-        $Boxers = Boxer::all(); 
+        $Bags = Bag::inRandomOrder()->get();
+        $Perfumes = Perfume::inRandomOrder()->get(); 
+        $Singlets = Singlet::inRandomOrder()->get(); 
+        $Boxers = Boxer::inRandomOrder()->get(); 
         $ImageFolder = 'perfumes'; 
         $ProductNameForRoute = ucfirst($ImageFolder);
         $ProductNameForRoute_2 = 'Bags';

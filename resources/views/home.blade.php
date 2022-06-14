@@ -200,7 +200,7 @@
                     </div>
                     <div>
                         <h1>WHATSAPP</h1>
-                        <span>0905 650 5256</span>
+                        <span>0817 614 1600</span>
                     </div>
                 </div>
                 <div class="contact-info">
@@ -208,7 +208,7 @@
                     </div>
                     <div>
                         <h1>CALL US AT</h1>
-                        <span>0802 256 1855</span>
+                        <span>0909 262 9101</span>
                     </div>
                 </div>
                 <div class="contact-info">
@@ -216,7 +216,7 @@
                     </div>
                     <div>
                         <h1>INSTAGRAM</h1>
-                        <span>@jasminesolaboutique_</span>
+                        <span>@jasminesolaboutique</span>
                     </div>
                 </div>
                 <div class="contact-info">
@@ -224,7 +224,7 @@
                     </div>
                     <div>
                         <h1>FACEBOOK</h1>
-                        <span>jasminesolaboutique</span>
+                        <span>Jasmine Sola Boutique</span>
                     </div>
                 </div>
                 <div class="contact-info">
@@ -232,7 +232,7 @@
                     </div>
                     <div>
                         <h1>SHOP LOCATION</h1>
-                        <span>22/23 Dockyard, Apapa</span>
+                        <span>23/24 Dockyard, Apapa</span>
                     </div>
                 </div>
                 <div class="contact-info">

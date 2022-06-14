@@ -16,12 +16,12 @@ class BagController extends Controller
     public function index()
     {
         $page_title = 'bags';
-        $Products = Bag::all(); 
+        $Products = Bag::inRandomOrder()->get(); 
         $ImageFolder = $page_title;
         $ProductName = ucfirst($ImageFolder);
         $ProductNameForRoute = ucfirst($ImageFolder);
-        $PageTitleBg = $page_title . '-bg.jpg';
-        
+        $PageTitleBg = $page_title . '-bg.jpg'; 
+         
         return view('Bags', [
             'PageTitleBg' => $PageTitleBg,
             'page_title' => ucwords($page_title),
@@ -62,7 +62,7 @@ class BagController extends Controller
      */
     public function show($ProductId)
     { 
-        $Products = Bag::all();  
+        $Products = Bag::inRandomOrder()->get();  
         $ImageFolder = 'bags';  
         $ProductNameForRoute = ucfirst($ImageFolder);
         

@@ -15,7 +15,7 @@ class SingletController extends Controller
     public function index()
     {
         $page_title = 'singlets';
-        $Products = Singlet::all(); 
+        $Products = Singlet::inRandomOrder()->get(); 
         $ImageFolder = $page_title;
         $ProductName = ucfirst($ImageFolder);
         $ProductNameForRoute = ucfirst($ImageFolder);
@@ -61,7 +61,7 @@ class SingletController extends Controller
      */
     public function show($ProductId)
     {
-        $Products = Singlet::all(); 
+        $Products = Singlet::inRandomOrder()->get(); 
         $ImageFolder = 'singlets';  
         $ProductNameForRoute = ucfirst($ImageFolder);
          

@@ -15,7 +15,7 @@ class PerfumeController extends Controller
     public function index()
     { 
         $page_title = 'perfumes';
-        $Products = Perfume::all(); 
+        $Products = Perfume::inRandomOrder()->get(); 
         $ImageFolder = $page_title;
         $ProductName = ucfirst($ImageFolder);
         $ProductNameForRoute = ucfirst($ImageFolder);
@@ -61,7 +61,8 @@ class PerfumeController extends Controller
      */
     public function show($ProductId)
     { 
-        $Products = Perfume::all(); 
+        $Products = Perfume::inRandomOrder()->get();
+        // $Products = Perfume::inRandomOrder()->get();
         $ImageFolder = 'perfumes';
         $ProductNameForRoute = ucfirst($ImageFolder);
  
