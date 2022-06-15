@@ -110,7 +110,7 @@
             </a>
         </div>
         <div class="footer">
-            <h1>JASMINE GALLERY</h1>
+            <h1>CATEGORIES</h1>
             <ul>
                 <li><a href="{{ route('Perfumes') }}">PERFUMES</a></li>
                 <li><a href="{{ route('Bags') }}">BAGS</a></li>
