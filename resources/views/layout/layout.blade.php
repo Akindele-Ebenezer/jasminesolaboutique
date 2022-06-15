@@ -35,13 +35,13 @@
         </nav>
         <nav>
             <div>
-                <h1><a href="{{ route('Home') }}"><img src="{{ asset('images/logo.png') }}"></a></h1>
+                <h1><a href="/"><img src="{{ asset('images/logo.png') }}"></a></h1>
             </div>
             <div>
                 <ul>
-                    <li><a href="{{ route('Home') }}">HOME</a></li>
+                    <li><a href="/">HOME</a></li>
                     <li><a href="/">SHOP</a></li>
-                    <li><a href="/">CONTACT</a></li>
+                    <li><a href="/#Contact">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -65,7 +65,7 @@
     <footer>
         <div class="footer">
             <h1>JASMINE SolaB.</h1> 
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea cum nemo saepe ratione repellendus? Qui rerum suscipit rem adipisci fugiat.
+            <p>Welcome to our ONLINE STORE. We are available from Mondays - Sundays <br> (8AM - 6PM WAT). <br><br> If you have any questions or queries, feel free to contact us by telephone or email and we will get back to you as soon as possible. <br><br> Here's how you can reach us.</p>
             <br><br>
             <div>
                <a target="blank" href="https://www.facebook.com/Jasminesolaboutique"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
@@ -76,9 +76,9 @@
         <div class="footer">
             <h1>LINKS</h1>
             <ul>
-                <li>About JASMINE SolaB</li>
-                <li>Shop</li>
-                <li>Contact Us</li>
+                <li><a href="/">HOME</a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="#Contact">CONTACT</a></li>
             </ul>
         </div>
         <div class="footer">
@@ -111,6 +111,14 @@
         </div>
         <div class="footer">
             <h1>JASMINE GALLERY</h1>
+            <ul>
+                <li><a href="{{ route('Perfumes') }}">PERFUMES</a></li>
+                <li><a href="{{ route('Bags') }}">BAGS</a></li>
+                <li><a href="{{ route('Singlets') }}">SINGLETS</a></li>
+                <li><a href="{{ route('Boxers') }}">BOXERS</a></li>
+                <li>SHOES</a></li>
+                <li>HAIR</a></li>
+            </ul>
         </div>
     </footer>
     <p>Copyright 2022 &copy;JASMINESolaBoutique. All rights reserved.</p>

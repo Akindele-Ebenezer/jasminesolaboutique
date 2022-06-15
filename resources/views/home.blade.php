@@ -148,17 +148,17 @@
         <div class="sec-3-inner">
             <img src="{{ asset('images/free-shipping.png') }}">
             <h1>DELIVERY</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, vero.</p>
+            <p>We provide Fast and reliable Delivery Services that meet your timeline and Budget. We are prud to always be on demand.</p>
         </div>
         <div class="sec-3-inner">
             <img src="{{ asset('images/cash-back.png') }}">
             <h1>REFUND</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, vero.</p>
+            <p>Thank you for shopping at JASMINE Sola Boutique! We offer refund and/or exchange within the first 30 days of your purchase.</p>
         </div>
         <div class="sec-3-inner">
             <img src="{{ asset('images/question.png') }}">
             <h1>NEED HELP ?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, vero.</p>
+            <p>Please tell us how we can help, send your request for support to <a href="mailto:info@jasminesolaboutique.com">info@jasminesolaboutique.com</a> or <a href="jasminesolaboutique@gmail.com">jasminesolaboutique@gmail.com</a></p>
         </div>
     </section>
 
@@ -191,17 +191,17 @@
     <section class="sec-4" id="Contact">
         <div class="sec-4-inner">
             <div class="contact">
-                <h1>GET IN TOUCH</h1>
+                <h1>WE ARE HERE</h1>
                 <br>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi maxime sunt dignissimos eos, incidunt delectus labore iusto ipsa, aliquid laborum ducimus, voluptatum commodi doloribus quibusdam inventore nesciunt corporis possimus accusantium esse.  <br><br> Delectus ullam iste dolores repellendus perspiciatis esse aliquid assumenda ea, odit officiis quasi blanditiis tenetur. Delectus numquam eligendi temporibus.</p>
+                <p>Want to get in touch? We'd love to hear from you. Choose the appropriate product from our store related to your inquiry and your request will be directed to you. If you don't find what you need, fill out the contact form (BOOK NOW). We are available from Mondays - Sundays (8AM - 6PM WAT). <br><br> If you have any questions or queries, feel free to contact us by telephone or email and we will get back to you as soon as possible. <br><br> Here's how you can reach us.</p>
                 <br>
-                <a target="blank" href="https://api.whatsapp.com/send?phone=2349092629101">
+                <a target="blank" href="https://api.whatsapp.com/send?phone=2348176141600">
                     <div class="contact-info">
                         <div><img src="{{ asset('images/ws.png') }}">
                         </div>
                         <div>
                             <h1>WHATSAPP</h1>
-                            <span>0909 262 9101</span>
+                            <span>0817 614 1600</span>
                         </div>
                     </div>
                 </a>

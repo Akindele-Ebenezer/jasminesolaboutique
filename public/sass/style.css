@@ -67,6 +67,7 @@ a {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
 }
 
 header {
@@ -224,11 +225,6 @@ main .main {
 .from-shop-from-shop h2 {
   color: #13356c;
   margin: 1rem;
-}
-.new-products-title#ShopNow, .new-products-from-shop#ShopNow,
-.from-shop-title#ShopNow,
-.from-shop-from-shop#ShopNow {
-  padding-top: 6rem;
 }
 .new-products .product,
 .from-shop .product {
@@ -413,6 +409,7 @@ section.sec-2 .sec-2-inner div img {
   width: 5rem;
 }
 section.sec-3 {
+  background: linear-gradient(to right, #fff3f3, #eef4ff);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -428,9 +425,6 @@ section.sec-3 .sec-3-inner img {
 }
 section.sec-3 .sec-3-inner p {
   padding-block: 1rem;
-}
-section.sec-4 {
-  padding-block: 4.55rem;
 }
 section.sec-4 .sec-4-inner {
   align-items: center;
@@ -870,7 +864,7 @@ footer {
   color: #ccc;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-inline: 1rem;
 }
 footer .footer {
@@ -884,6 +878,9 @@ footer .footer .contact-info {
 }
 footer .footer .contact-info div span {
   color: #ccc;
+}
+footer .footer .contact-info div span:hover {
+  color: #999;
 }
 footer .footer div:first-of-type img {
   margin-right: 0.5rem;
@@ -907,6 +904,12 @@ footer .footer h1 {
   color: #fff;
   font-size: 1.5rem;
   margin-block: 1rem;
+}
+footer .footer ul li a {
+  color: #ccc;
+}
+footer .footer ul li a:hover {
+  color: #999;
 }
 footer + p {
   background: #111;

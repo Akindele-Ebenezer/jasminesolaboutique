@@ -33,11 +33,7 @@ main {
         h2 {
             color: $color-1;
             margin: 1rem;
-        }
-    
-        &#ShopNow {
-            padding-top: 6rem;
-        }
+        } 
     }
 
     .product {
@@ -175,6 +171,7 @@ section {
     }
 
     &.sec-3 {
+        background: linear-gradient(to right, #fff3f3, #eef4ff);
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -195,9 +192,7 @@ section {
         }
     }
 
-    &.sec-4 {
-        padding-block: 4.55rem;
-
+    &.sec-4 { 
         .sec-4-inner {
             align-items: center;
             display: flex;
