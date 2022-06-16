@@ -244,7 +244,7 @@
                     </div>
                     <div>
                         <h1>SHOP LOCATION</h1>
-                        <span>23/24 Dockyard, Apapa</span>
+                        <span>Online Store</span>
                     </div>
                 </div>
                 <a target="blank" href="mailto:jasminesolaboutique@gmail.com">
