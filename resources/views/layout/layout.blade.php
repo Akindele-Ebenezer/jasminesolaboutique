@@ -20,6 +20,16 @@
     <link rel="stylesheet" href="{{ asset('sass/style.css') }}"> 
 
     <title>@yield('title')</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232275015-1">
+    </script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-232275015-1');
+    </script>
 </head>
 <body>
 
