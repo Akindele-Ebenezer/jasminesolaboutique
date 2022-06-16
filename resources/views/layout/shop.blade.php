@@ -3,6 +3,7 @@
 @section('title', $page_title . ' | Jasmine SOLA Boutique')
 @section('content')
 @yield('page_title')
+@yield('Shop')
 
     <div class="shop {{ Request::is('Perfumes') ? 'shop-wrapper' : '' }}">
         <div class="shop-inner">
@@ -37,6 +38,7 @@
                             <input type="hidden" name="ProductImage" value="{{ $Product->Image }}">
                             <input type="hidden" name="ProductDescription" value="{{ $Product->Description }}">
                             <input type="hidden" name="ProductDetail" value="{{ $Product->ProductDetail }}">
+                            <input type="hidden" name="ProductType" value="{{ $Product->ProductType }}">
                         </div>
                     </div>  
                 </form>

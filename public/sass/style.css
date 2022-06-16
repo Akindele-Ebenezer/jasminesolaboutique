@@ -413,6 +413,7 @@ section.sec-3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 2rem;
   padding-block: 4rem;
   text-align: center;
 }
@@ -859,6 +860,28 @@ section.sec-1 .sec-1-inner div p {
     display: none;
   }
 }
+.purchase-success {
+  align-items: center;
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  padding-block: 7rem;
+  text-align: center;
+}
+.purchase-success h1 {
+  font-size: 4rem;
+}
+.purchase-success h1,
+.purchase-success h2 {
+  padding-block: 1rem;
+}
+.purchase-success h2 {
+  font-size: 4rem;
+}
+.purchase-success p {
+  font-size: 2rem;
+}
+
 footer {
   background: #111;
   color: #ccc;

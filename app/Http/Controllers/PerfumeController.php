@@ -66,7 +66,7 @@ class PerfumeController extends Controller
         $MostPopular = Perfume::inRandomOrder()->get();
         $ImageFolder = 'perfumes';
         $ProductNameForRoute = ucfirst($ImageFolder);
- 
+
         return view('PurchaseNow', [
             'MostPopular' => $MostPopular, 
             'RelatedProducts' => $Products, 

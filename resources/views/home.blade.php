@@ -8,7 +8,7 @@
                 <h1>ONLINE STORE</h1> 
                 <h2>JASMINE <span>SOLA</span></h2>
                 <span>BOUTIQUE</span>
-                <center><a href="#ShopNow"><button>SHOP NOW</button></a><a href="#Contact"><button>CONTACT</button></a></center>
+                <center><a href="/Shop"><button>SHOP NOW</button></a><a href="#Contact"><button>CONTACT</button></a></center>
                 <h3>SAVE UP TO 50%</h3>
                 <p>IF YOU BUY UP TO THREE PRODUCTS</p>
                 <span class="we-sell">
@@ -41,6 +41,7 @@
                     <input type="hidden" name="ProductImage" value="{{ $Bag->Image }}">
                     <input type="hidden" name="ProductDescription" value="{{ $Bag->Description }}">
                     <input type="hidden" name="ProductDetail" value="{{ $Bag->ProductDetail }}">
+                    <input type="hidden" name="ProductType" value="{{ $Bag->ProductType }}">
                 </div>
             </form>
         @endforeach
@@ -66,6 +67,7 @@
                     <input type="hidden" name="ProductImage" value="{{ $Perfume->Image }}">
                     <input type="hidden" name="ProductDescription" value="{{ $Perfume->Description }}">
                     <input type="hidden" name="ProductDetail" value="{{ $Perfume->ProductDetail }}">
+                    <input type="hidden" name="ProductType" value="{{ $Perfume->ProductType }}">
                 </div>
             </form>
         @endforeach 
@@ -139,6 +141,7 @@
                     <input type="hidden" name="ProductImage" value="{{ $Singlet->Image }}">
                     <input type="hidden" name="ProductDescription" value="{{ $Singlet->Description }}">
                     <input type="hidden" name="ProductDetail" value="{{ $Singlet->ProductDetail }}">
+                    <input type="hidden" name="ProductType" value="{{ $Singlet->ProductType }}">
                 </div>
             </form>
         @endforeach 
@@ -148,7 +151,7 @@
         <div class="sec-3-inner">
             <img src="{{ asset('images/free-shipping.png') }}">
             <h1>DELIVERY</h1>
-            <p>We provide Fast and reliable Delivery Services that meet your timeline and Budget. We are prud to always be on demand.</p>
+            <p>We provide Fast and reliable Delivery Services that meet your timeline and Budget. We are proud to always be on demand.</p>
         </div>
         <div class="sec-3-inner">
             <img src="{{ asset('images/cash-back.png') }}">
@@ -183,6 +186,7 @@
                     <input type="hidden" name="ProductImage" value="{{ $Boxer->Image }}">
                     <input type="hidden" name="ProductDescription" value="{{ $Boxer->Description }}">
                     <input type="hidden" name="ProductDetail" value="{{ $Boxer->ProductDetail }}">
+                    <input type="hidden" name="ProductType" value="{{ $Boxer->ProductType }}">
                 </div>
             </form>
         @endforeach
@@ -256,16 +260,18 @@
             </div>
             <div class="contact" id="BookNow">
                 <div class="form">
-                    <form action="" id="BookNowForm">
+                    <form action="/MessageSent" id="BookNowForm">
                         <h1>BOOK NOW</h1>
                         <div>
-                            <input type="text" name="" placeholder="Name of Product" value="Product : {{ $PurchasedProductName }}"><br>
-                            <input type="text" name="" placeholder="Amount" value=" Amount : ₦ {{ $PurchasedProductPrice }}"><br>
-                            <input type="text" name="" placeholder="Your Name"><br>
-                            <input type="email" name="" placeholder="Enter Email"><br>
-                            <input type="text" name="" placeholder="Phone No."><br>
-                            <input type="text" name="" placeholder="Location"><br>
-                            <textarea name="" placeholder="Describe how you want your item... (Optional)"></textarea><br>
+                            <input type="hidden" name="PurchasedProductType" value="{{ $PurchasedProductType }}"><br>
+                            <input type="hidden" name="PurchasedProductId" value="{{ $PurchasedProductId }}"><br>
+                            <input type="text" name="PurchasedProductName" placeholder="Name of Product" value="Product : {{ $PurchasedProductName }}"><br>
+                            <input type="text" name="PurchasedProductPrice" placeholder="Amount" value=" Amount : ₦ {{ $PurchasedProductPrice }}"><br>
+                            <input type="text" name="Name" placeholder="Your Name"><br>
+                            <input type="email" name="Email" placeholder="Enter Email"><br>
+                            <input type="text" name="PhoneNo" placeholder="Phone No."><br>
+                            <input type="text" name="Location" placeholder="Location"><br>
+                            <textarea name="Message" placeholder="Describe how you want your item... (Optional)"></textarea><br>
                         </div>
                         <button>SUBMIT</button>
                     </form>

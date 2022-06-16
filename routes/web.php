@@ -7,10 +7,11 @@ use App\Http\Controllers\PerfumeController;
 use App\Http\Controllers\BagController;
 use App\Http\Controllers\SingletController;
 use App\Http\Controllers\BoxerController;
+use App\Http\Controllers\MailController;
  
 Route::get('/', [IndexController::class, 'index'])->name('Home');
 
-// Route::get('/Shop', [HomeController::class, 'index']);
+Route::get('/Shop', [IndexController::class, 'shop'])->name('Shop');
 
 Route::get('/PurchaseNow/Perfumes/{ProductId}', [PerfumeController::class, 'show']); 
 Route::get('/Perfumes', [PerfumeController::class, 'index'])->name('Perfumes');
@@ -23,3 +24,5 @@ Route::get('/PurchaseNow/Singlets/{ProductId}', [SingletController::class, 'show
 
 Route::get('/Boxers', [BoxerController::class, 'index'])->name('Boxers');
 Route::get('/PurchaseNow/Boxers/{ProductId}', [BoxerController::class, 'show']); 
+ 
+Route::get('/MessageSent', [MailController::class, 'MessageSent']);  

@@ -40,7 +40,7 @@
             <div>
                 <ul>
                     <li><a href="/">HOME</a></li>
-                    <li><a href="/">SHOP</a></li>
+                    <li><a href="/Shop">SHOP</a></li>
                     <li><a href="/#Contact">CONTACT</a></li>
                 </ul>
             </div>
@@ -77,7 +77,7 @@
             <h1>LINKS</h1>
             <ul>
                 <li><a href="/">HOME</a></li>
-                <li><a href="">SHOP</a></li>
+                <li><a href="/Shop">SHOP</a></li>
                 <li><a href="#Contact">CONTACT</a></li>
             </ul>
         </div>
@@ -151,6 +151,12 @@
                             
         BookNowForm.style.cursor = "unset";                            
          
+        let BookNowFormButton = document.querySelector('#BookNowForm button');
+
+        BookNowFormButton.addEventListener("click", () => {
+            BookNowForm.submit();
+        })
+
     </script>
 
 </body>

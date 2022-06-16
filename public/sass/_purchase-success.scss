@@ -1,0 +1,25 @@
+.purchase-success {
+    align-items: center;
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    padding-block: 7rem;
+    text-align: center;
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h1,
+    h2 {
+        padding-block: 1rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+}

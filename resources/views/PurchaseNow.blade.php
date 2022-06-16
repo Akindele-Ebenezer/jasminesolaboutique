@@ -6,6 +6,7 @@
     $ProductPrice = $_GET['ProductPrice'];
     $ProductDetail = $_GET['ProductDetail'];
     $ProductDescription = $_GET['ProductDescription']; 
+    $ProductType = $_GET['ProductType'];
     $page_title = $ProductName; 
 
 @endphp
@@ -32,6 +33,7 @@
                 <input type="hidden" name="ProductImage" value="{{ $ProductImage }}">
                 <input type="hidden" name="ProductDescription" value="{{ $ProductDescription }}">
                 <input type="hidden" name="ProductDetail" value="{{ $ProductDetail }}">
+                <input type="hidden" name="ProductType" value="{{ $ProductType }}">
             </form>
             <br>
             <h2>DESCRIPTION</h2>
@@ -65,6 +67,7 @@
                         <input type="hidden" name="ProductImage" value="{{ $Product->Image }}">
                         <input type="hidden" name="ProductDescription" value="{{ $Product->Description }}">
                         <input type="hidden" name="ProductDetail" value="{{ $Product->ProductDetail }}">
+                        <input type="hidden" name="ProductType" value="{{ $Product->ProductType }}">
                     </div>
                 </form>
             @endforeach

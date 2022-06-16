@@ -175,6 +175,7 @@ section {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-top: 2rem;
         padding-block: 4rem;
         text-align: center;
 
@@ -368,4 +369,5 @@ section {
 
 @import 'shop';
 @import 'purchase-now';
+@import 'purchase-success';
 @import 'footer';

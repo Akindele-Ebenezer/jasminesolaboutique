@@ -27,9 +27,11 @@
                 <input type="hidden" name="ProductImage" value="{{ $Product->Image }}">
                 <input type="hidden" name="ProductDescription" value="{{ $Product->Description }}">
                 <input type="hidden" name="ProductDetail" value="{{ $Product->ProductDetail }}">
+                <input type="hidden" name="ProductType" value="{{ $Product->ProductType }}">
                 <button>BUY NOW</button>
             </div>
         </form>
     @endforeach 
 @endsection
+
  
