@@ -18,7 +18,9 @@
     <div class="purchase-now">
         <div class="purchase-now-inner"> 
             <h2>{{ $ProductDescription }}</h2>
-            <div class="purchase-now-product" style="background-image: url('/images/{{ $ImageFolder }}/{{ $ProductImage }}')"></div>
+            <a href="/images/{{ $ImageFolder }}/{{ $ProductImage }}" target="blank">
+                <div class="purchase-now-product" style="background-image: url('/images/{{ $ImageFolder }}/{{ $ProductImage }}')"></div>
+            </a>
         </div>
         <div class="purchase-now-inner">
             <h1>{{ $ProductName }}</h1>
