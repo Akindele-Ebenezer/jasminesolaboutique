@@ -11,6 +11,63 @@ main {
     }
 }
 
+.nav-sm-screen {
+    align-items: center;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    transition: 1s;
+    transform: translateX(-100%);
+    width: 100vw;
+    z-index: 101;
+    
+    button {
+        @include button();
+
+        a {
+            color: #eee; 
+        }
+        &:hover {
+            background: unset;
+            color: $color-1;
+        }
+    }
+
+    p {
+        background: $color-4;
+        border-radius: .3rem;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-right: 1rem;
+        padding: .1rem 1rem;
+        position: absolute;
+        right: 0;
+        top: 2rem;
+        width: max-content;
+    }
+    
+    ul {
+        margin-block: 2rem;
+        
+        li {
+            padding-block: .5rem;
+
+            a {
+                color: #eee;
+                font-size: 2.5rem;
+                
+                &:hover { 
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
 .new-products,
 .from-shop {
     display: flex;

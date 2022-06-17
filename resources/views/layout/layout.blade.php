@@ -61,11 +61,27 @@
         <div>
             <h1><a href="{{ route('Home') }}"><img src="{{ asset('images/logo.png') }}"></a></h1>
         </div>
-        <div>
+        <div class="menu-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
         </div>
     </div>
     
+    <div class="nav-sm-screen">
+        <div class="nav-sm-screen-inner">
+            <p>X</p>
+            <div>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/Shop">SHOP</a></li>
+                    <li><a href="/#Contact">CONTACT</a></li>
+                    <li><a href="tel:08176141600">CALL US</a></li>
+                    <li><a target="blank" href="https://api.whatsapp.com/send?phone=2348176141600">WHATSAPP</a></li>
+                </ul>
+                <a href="/Shop"><button>BUY NOW</button></a>
+            </div>
+        </div>
+    </div>
+
     <main>
         <div class="main">
             @yield('content')
@@ -132,42 +148,7 @@
         </div>
     </footer>
     <p>Copyright 2022 &copy;JASMINESolaBoutique. All rights reserved.</p>
-    @yield('scripts')
-    <script>
-
-        let Form = document.querySelectorAll("form"); 
-        
-        for (let i = 0; i < Form.length; i++) {
-            Form[i].addEventListener("click", () => {
-
-                if (Form[i].id === "BookNowForm") {
-                    Form[i].addEventListener("click", event => event.preventDefault());
-                } else {
-                    Form[i].submit();                    
-                }
-
-            });  
-             
-            Form[i].addEventListener("mouseover", () => {     
-                Form[i].classList.toggle("Form-Hover-Effect");      
-            });  
-            
-            Form[i].addEventListener("mouseout", () => {     
-                Form[i].classList.remove("Form-Hover-Effect");      
-            });  
-        } 
-        
-        let BookNowForm = document.getElementById("BookNowForm");
-                            
-        BookNowForm.style.cursor = "unset";                            
-         
-        let BookNowFormButton = document.querySelector('#BookNowForm button');
-
-        BookNowFormButton.addEventListener("click", () => {
-            BookNowForm.submit();
-        })
-
-    </script>
-
+    @yield('scripts') 
+    <script src="/scripts/scripts.js"></script>
 </body>
 </html>

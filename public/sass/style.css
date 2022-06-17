@@ -70,6 +70,10 @@ html {
   scroll-padding-top: 7rem;
 }
 
+.Toggle {
+  transform: translateX(0) !important;
+}
+
 header {
   position: fixed;
   z-index: 100;
@@ -169,6 +173,7 @@ header nav:last-child ul li a:hover {
   padding: 0.3rem;
   width: 1rem;
   transform: translateY(0.75rem);
+  cursor: pointer;
   border-radius: unset;
   height: 3rem;
   padding: unset;
@@ -195,6 +200,61 @@ main {
 main .main {
   overflow: hidden;
   width: 85vw;
+}
+
+.nav-sm-screen {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  text-align: center;
+  transition: 1s;
+  transform: translateX(-100%);
+  width: 100vw;
+  z-index: 101;
+}
+.nav-sm-screen button {
+  background: #13356c;
+  border: 3px solid #13356c;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  transition: 0.5s;
+}
+.nav-sm-screen button a {
+  color: #eee;
+}
+.nav-sm-screen button:hover {
+  background: unset;
+  color: #13356c;
+}
+.nav-sm-screen p {
+  background: #ff6c6c;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  padding: 0.1rem 1rem;
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  width: max-content;
+}
+.nav-sm-screen ul {
+  margin-block: 2rem;
+}
+.nav-sm-screen ul li {
+  padding-block: 0.5rem;
+}
+.nav-sm-screen ul li a {
+  color: #eee;
+  font-size: 2.5rem;
+}
+.nav-sm-screen ul li a:hover {
+  text-decoration: underline;
 }
 
 .new-products,

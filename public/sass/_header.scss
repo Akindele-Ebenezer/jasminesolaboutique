@@ -99,6 +99,7 @@ header {
 
         svg {
             @include icons();
+            cursor: pointer;
             border-radius: unset;
             height: 3rem;
             padding: unset;

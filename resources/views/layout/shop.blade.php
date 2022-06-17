@@ -50,4 +50,4 @@
             @yield('purchase_now')
         </div>
     </div>
-@endsection
+@endsection 
