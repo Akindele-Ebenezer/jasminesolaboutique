@@ -10,13 +10,13 @@
             <div class="categories">
                 <h1>CATEGORIES</h1>
                 <ul>
-                    <li class="{{ Request::is('ShopNow') ? 'active' : '' }}">ALL</li>
-                    <li class="{{ Request::is('PurchaseNow/Perfumes*', 'Perfumes*') ? 'active' : '' }}">PERFUMES</li>
-                    <li class="{{ Request::is('PurchaseNow/Bags*', 'Bags*') ? 'active' : '' }}">BAGS</li>
-                    <li class="{{ Request::is('PurchaseNow/Boxers*', 'Boxers*') ? 'active' : '' }}">BOXERS</li>
+                    <li class="{{ Request::is('Shop') ? 'active' : '' }}"><a href="/Shop">ALL</a></li>
+                    <li class="{{ Request::is('PurchaseNow/Perfumes*', 'Perfumes*') ? 'active' : '' }}"><a href="/Perfumes">PERFUMES</a></li>
+                    <li class="{{ Request::is('PurchaseNow/Bags*', 'Bags*') ? 'active' : '' }}"><a href="/Bags">BAGS</a></li>
+                    <li class="{{ Request::is('PurchaseNow/Boxers*', 'Boxers*') ? 'active' : '' }}"><a href="/Boxers">BOXERS</a></li>
                     <li class="{{ Request::is('PurchaseNow/Shoes*', 'Shoes*') ? 'active' : '' }}">SHOES</li>
                     <li class="{{ Request::is('PurchaseNow/Hair*', 'Hair*') ? 'active' : '' }}">HAIR</li>
-                    <li class="{{ Request::is('PurchaseNow/Singlets*', 'Singlets*') ? 'active' : '' }}">SINGLETS</li>
+                    <li class="{{ Request::is('PurchaseNow/Singlets*', 'Singlets*') ? 'active' : '' }}"><a href="/Singlets">SINGLETS</a></li>
                 </ul>
                 <div style="background-image: url('{{ asset('images/bgg.jpg') }}')"></div>
             </div>

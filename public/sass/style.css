@@ -642,7 +642,12 @@ section.sec-1 .sec-1-inner div p {
 }
 .shop .shop-inner .categories ul li.active {
   border-bottom: 2px solid #13356c;
+}
+.shop .shop-inner .categories ul li.active a {
   color: #13356c;
+}
+.shop .shop-inner .categories ul li a:hover {
+  color: #ff6c6c;
 }
 .shop .shop-inner .product {
   border-left: unset;
@@ -758,6 +763,14 @@ section.sec-1 .sec-1-inner div p {
 .title .title-inner span {
   color: #eee;
   text-align: center;
+}
+.title .title-inner h1 a,
+.title .title-inner span a {
+  color: #eee;
+}
+.title .title-inner h1 a:hover,
+.title .title-inner span a:hover {
+  color: #ff6c6c;
 }
 .title .title-inner h1 {
   font-style: italic;

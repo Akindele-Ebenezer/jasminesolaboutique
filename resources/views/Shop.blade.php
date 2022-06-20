@@ -5,7 +5,7 @@
         <div class="title-inner">
             <div>
                 <h1>{{ $page_title }}</h1>
-                <span>HOME &nbsp;&nbsp;&nbsp; > &nbsp;&nbsp;&nbsp; CATEGORIES &nbsp;&nbsp;&nbsp; > &nbsp;&nbsp;&nbsp; <strong>{{ $page_title }}</strong></span>
+                <span><a href="/">HOME</a> &nbsp;&nbsp;&nbsp; > &nbsp;&nbsp;&nbsp; <a href="/Shop">CATEGORIES</a> &nbsp;&nbsp;&nbsp; > &nbsp;&nbsp;&nbsp; <strong>{{ $page_title }}</strong></span>
             </div>
         </div>
     </div>
