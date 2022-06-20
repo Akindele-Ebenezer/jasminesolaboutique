@@ -634,6 +634,9 @@ section.sec-1 .sec-1-inner div p {
   margin-block: 2rem;
   width: 20rem;
 }
+.shop .shop-inner .categories h1 {
+  text-align: center;
+}
 .shop .shop-inner .categories ul li {
   margin-block: 0.2rem;
 }

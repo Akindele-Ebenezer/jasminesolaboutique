@@ -11,11 +11,12 @@
                 <h1>CATEGORIES</h1>
                 <ul>
                     <li class="{{ Request::is('ShopNow') ? 'active' : '' }}">ALL</li>
-                    <li class="{{ Request::is('P*') ? 'active' : '' }}">PERFUMES</li>
-                    <li class="{{ Request::is('Bags') ? 'active' : '' }}">BAGS</li>
-                    <li class="{{ Request::is('Shoes') ? 'active' : '' }}">SHOES</li>
-                    <li class="{{ Request::is('Hair') ? 'active' : '' }}">HAIR</li>
-                    <li class="{{ Request::is('Singlets') ? 'active' : '' }}">SINGLETS</li>
+                    <li class="{{ Request::is('PurchaseNow/Perfumes*', 'Perfumes*') ? 'active' : '' }}">PERFUMES</li>
+                    <li class="{{ Request::is('PurchaseNow/Bags*', 'Bags*') ? 'active' : '' }}">BAGS</li>
+                    <li class="{{ Request::is('PurchaseNow/Boxers*', 'Boxers*') ? 'active' : '' }}">BOXERS</li>
+                    <li class="{{ Request::is('PurchaseNow/Shoes*', 'Shoes*') ? 'active' : '' }}">SHOES</li>
+                    <li class="{{ Request::is('PurchaseNow/Hair*', 'Hair*') ? 'active' : '' }}">HAIR</li>
+                    <li class="{{ Request::is('PurchaseNow/Singlets*', 'Singlets*') ? 'active' : '' }}">SINGLETS</li>
                 </ul>
                 <div style="background-image: url('{{ asset('images/bgg.jpg') }}')"></div>
             </div>
