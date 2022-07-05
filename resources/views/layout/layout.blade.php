@@ -49,7 +49,7 @@
             </div>
             <div>
                 <ul>
-                    <li><a href="/">ddHOME</a></li>
+                    <li><a href="/">HOME</a></li>
                     <li><a href="/Shop">SHOP</a></li>
                     <li><a href="/#Contact">CONTACT</a></li>
                 </ul>
