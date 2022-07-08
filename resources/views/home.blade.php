@@ -2,6 +2,11 @@
 
 @section('title', 'JASMINE Sola Boutique')
 @section('content')
+
+    <div class="ceo">
+        <img src="/images/ceo.jpg" alt="">
+    </div>
+    
     <section class="sec-1" style="background-image: url('{{ asset('images/bg.jpg') }}')">
         <div class="sec-1-inner">
             <div>
