@@ -33,10 +33,6 @@
 </head>
 <body>
     
-    <div class="ceo">
-        <img src="/images/ceo.jpg" alt="">
-    </div>
-    
     <header>
         <nav>
             <div>
