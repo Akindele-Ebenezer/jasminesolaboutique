@@ -17,22 +17,26 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="{{ asset('sass/style.css') }}"> 
+    <link rel="stylesheet" href="{{ asset('sass/styles.css') }}"> 
 
     <title>@yield('title')</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232275015-1">
     </script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-232275015-1');
-    </script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-232275015-1');
+        </script>
 </head>
 <body>
-
+    
+    <div class="ceo">
+        <img src="/images/ceo.jpg" alt="">
+    </div>
+    
     <header>
         <nav>
             <div>

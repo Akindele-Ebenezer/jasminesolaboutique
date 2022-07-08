@@ -193,6 +193,16 @@ header nav:last-child ul li a:hover {
     display: none;
   }
 }
+.ceo img {
+  border-radius: 1rem 2rem;
+  box-shadow: 25px 25px 60px pink;
+  left: 1rem;
+  padding: 0.5rem;
+  position: absolute;
+  top: 7rem;
+  width: 5rem;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -1023,4 +1033,4 @@ footer + p {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
